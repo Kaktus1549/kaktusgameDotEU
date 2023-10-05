@@ -14,9 +14,46 @@ body {
     background-position: right;
 }
 
-/* Landscape orientation */
-@media (orientation: landscape) {
-    body {
-        background-size: 100% 100%;
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 100%;
+    background: #042331;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 830px) and (orientation: landscape) {
+    .sidebar {
+        width: 40%; /* Šířka sidebaru pro mobilní zařízení v landscape orientaci */
     }
+}
+@media screen and (max-width: 830px) {
+    .sidebar {
+        width: 70%; /* Nastavte šířku sidebaru pro mobilní zařízení podle vašich potřeb */
+    }
+}
+.sidebar h2 {
+    font-size: 250%; /* Velikost nadpisu */
+    margin-bottom: 12px; /* Odsazení mezi nadpisem a čarou */
+    margin: 5%;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Styly pro čáru */
+    margin: 10px 0; /* Odsazení nad a pod čarou */
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: rebeccapurple;
 }
