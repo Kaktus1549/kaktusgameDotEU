@@ -1,3 +1,22 @@
-body{
-    background-color: red;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to bottom right, black 64%, red 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) {
+    body {
+        background-size: 100% 100%;
+    }
 }
