@@ -17,8 +17,9 @@ body {
 .sidebar h1{
     font-size: 40px;
     color: #22C723;
+    z-index: 2;
     font-family: Verdana;
-    margin-left: 12px;
+    margin-left: -15px;
     margin-bottom: 13px;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .image-container {
     position: relative; /* Nastavíme relativní pozici pro kontejner obrázku */
-    margin-left: -20px; /* Odsazení mezi obrázkem a nadpisem */
+    margin-left: -35px; /* Odsazení mezi obrázkem a nadpisem */
     margin-bottom: -12px;
 }
 
@@ -71,7 +72,7 @@ body {
 }
 
 .sidebar a {
-    padding: 8px 18px 18px 17%;
+    padding: 8px 18px 18px 82px;
     text-decoration: none;
     font-size: 210%;
     color: white;
@@ -83,7 +84,67 @@ body {
     background: #fff;
 }
 
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 807px;
+}
+.feedback-container a {
+    padding: 8px 18px 8px 57px;
+    text-decoration: none;
+    font-size: 280%;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.feedback-container a:hover {
+    color: #111;
+    background: #fff;
+}
+.logo-container {
+    display: flex; /* Nastavit kontejner loga jako flexbox pro horizontální uspořádání */
+    flex-direction: row; /* Rozmístění položek vedle sebe */
+    align-items: center; /* Zarovnat položky vertikálně na střed */
+    margin-top: 2px; /* Umožnit umístit loga na spodní okraj bočního panelu */
+    color : #042331;
+}
+.logo-container a {
+    display: inline-block; /* Umožnit zarovnání loga na střed */
+    align-items: center;
+    padding: 0 0 0 0;
+    border: 2px solid #042331;
+    color: #042331;
+    width: 30%;
+}
+.logo-container img {
+    max-width: 45%; /* Nastavte velikost loga podle potřeby */
+    margin-left: 32px;
+    margin-top: 5px
+}
+.logo-spin:hover {
+    color: #042331;
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
+.logo-container a:hover {
+    color: #111;
+    background: #042331;
+}
+.logo-container .discord-logo {
+    max-width: 63%;
+    margin-left: 22px; 
+}
+.logo-container .first-logo {
+    margin-left: 15px; 
+}
+
 @media screen and (max-width: 830px) {
+    .sidebar h1{
+        font-size: 22px;
+        margin-left: 2px;
+        margin-bottom: 6px;
+    }
     .sidebar {
         width: 235px; 
     }
@@ -95,9 +156,9 @@ body {
         margin: 0 3%;
     }
     .image-container {
-        margin-left: 60px;
+        margin-left: -9px;
     }
     .image-container img {
-        max-width: 80px;
+        max-width: 70px;
     }
 }

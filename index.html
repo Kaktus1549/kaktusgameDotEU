@@ -11,19 +11,43 @@
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
-                    <img id="menuImage" src="./images/menuImage.png" alt="Menu Image"> 
+                    <img id="menuImage" src="./images/menuImage.png" alt="Menu Image" data-state="open"> 
             </div>
             <h1>KaktusGame</h1>
         </div>
         <hr>
-        <a href="#">Who I am</a>
-        <a href="#">What I Can Do</a>
-        <a href="#">Something</a>
+        <a href="#">dokaz ff</a>
+        <a href="#">odkaz zz</a>
+        <a href="#">odkaz jj</a>
+        <div class="feedback-container">
+            <a>Feedback</a>
+        </div>
+        
+        <div class="logo-container">
+            <a href="odkaz1.html" class="first-logo" >
+                <img src="./images/discord.png" alt="Logo 1" class="discord-logo logo-spin">
+            </a>
+            <a href="odkaz2.html">
+                <img src="./images/ig.png" alt="Logo 2" class="logo-spin">
+            </a>
+            <a href="odkaz3.html">
+                <img src="./images/gh.png" alt="Logo 3" class="logo-spin">
+            </a>
+        </div>
+
     </aside>
     <script>
-        document.getElementById("menuImage").addEventListener("click", function() {
-            // Přesměrování na cílovou stránku po kliknutí na obrázek
-            window.location.href = "cilova_stranka.html";
+        var toggleButton = document.getElementById("menuImage");
+
+        toggleButton.addEventListener("click", function() {
+        var currentState = toggleButton.getAttribute("data-state");
+    
+        if (currentState === "closed") {
+        toggleButton.setAttribute("data-state", "open");
+        } 
+        else {
+        toggleButton.setAttribute("data-state", "closed");
+    }
         });
     </script>
 </body>
