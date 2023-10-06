@@ -9,11 +9,22 @@
 </head>
 <body>
     <aside class="sidebar">
-        <h2>KaktusGame</h2>
+        <div class="title-container">
+            <div class="image-container">
+                    <img id="menuImage" src="./images/menuImage.png" alt="Menu Image"> 
+            </div>
+            <h1>KaktusGame</h1>
+        </div>
         <hr>
-        <a href="#">Odkaz 1</a>
-        <a href="#">Odkaz 2</a>
-        <a href="#">Odkaz 3</a>
+        <a href="#">Who I am</a>
+        <a href="#">What I Can Do</a>
+        <a href="#">Something</a>
     </aside>
+    <script>
+        document.getElementById("menuImage").addEventListener("click", function() {
+            // Přesměrování na cílovou stránku po kliknutí na obrázek
+            window.location.href = "cilova_stranka.html";
+        });
+    </script>
 </body>
 </html>

@@ -14,32 +14,56 @@ body {
     background-position: right;
 }
 
+.sidebar h1{
+    font-size: 40px;
+    color: #22C723;
+    font-family: Verdana;
+    margin-left: 12px;
+    margin-bottom: 13px;
+}
+
+.title-container {
+    display: flex;
+    align-items: flex-end; /* Umístí obrázek na spodní okraj nadpisu */
+    margin: 0 5%; /* Odsazení zleva a zprava stejné jako u nadpisu */
+}
+
+.image-container {
+    position: relative; /* Nastavíme relativní pozici pro kontejner obrázku */
+    margin-left: -20px; /* Odsazení mezi obrázkem a nadpisem */
+    margin-bottom: -12px;
+}
+
+.image-container img {
+    max-width: 100px; /* Nastavte maximální šířku obrázku podle vašich potřeb */
+    display: block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.image-container::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Vytvoří čtvercový kontejner na základě šířky obrázku */
+    background: #042331;
+    position: absolute;
+    top: -25px;
+    height: 20px;
+    left: 0;
+    width: 100%; /* 100% šířka kontejneru */
+}
+
 .sidebar{
     position: absolute;
     top: 0;
     left: 0;
-    width: 18%;
+    width: 415px;
     height: 100%;
     background: #042331;
     padding: 10px 0;
     transition: all 0.3s ease;
 }
-@media screen and (max-width: 830px) and (orientation: landscape) {
-    .sidebar {
-        width: 40%; /* Šířka sidebaru pro mobilní zařízení v landscape orientaci */
-    }
-}
-@media screen and (max-width: 830px) {
-    .sidebar {
-        width: 70%; /* Nastavte šířku sidebaru pro mobilní zařízení podle vašich potřeb */
-    }
-}
-.sidebar h2 {
-    font-size: 250%; /* Velikost nadpisu */
-    margin-bottom: 12px; /* Odsazení mezi nadpisem a čarou */
-    margin: 5%;
-}
-
 .sidebar hr {
     border: none;
     border-top: 1px solid #ccc; /* Styly pro čáru */
@@ -47,13 +71,33 @@ body {
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 18px 18px 17%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 210%;
     color: white;
     display: block;
     transition: 0.3s;
 }
 .sidebar a:hover {
-    color: rebeccapurple;
+    color: #111;
+    background: #fff;
+}
+
+@media screen and (max-width: 830px) {
+    .sidebar {
+        width: 235px; 
+    }
+    .sidebar a {
+        padding: 8px 18px 18px 10%;	
+        font-size: 180%;
+    }
+    .title-container {
+        margin: 0 3%;
+    }
+    .image-container {
+        margin-left: 60px;
+    }
+    .image-container img {
+        max-width: 80px;
+    }
 }
