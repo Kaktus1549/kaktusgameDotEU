@@ -85,41 +85,45 @@ body {
 }
 
 .feedback-container {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 807px;
+    position: absolute;
+    bottom: 9%;
+    margin-bottom: 22px;
 }
 .feedback-container a {
-    padding: 8px 18px 8px 57px;
+    padding: 5px 100% 1px 82px;
     text-decoration: none;
-    font-size: 280%;
+    font-size: 315%;
     color: white;
     display: block;
-    transition: 0.3s;
+    width: 157px;
+    transition: 0.3s;  
+    margin-left: -32px;
 }
 .feedback-container a:hover {
     color: #111;
     background: #fff;
 }
+
 .logo-container {
-    display: flex; /* Nastavit kontejner loga jako flexbox pro horizontální uspořádání */
-    flex-direction: row; /* Rozmístění položek vedle sebe */
-    align-items: center; /* Zarovnat položky vertikálně na střed */
-    margin-top: 2px; /* Umožnit umístit loga na spodní okraj bočního panelu */
-    color : #042331;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    color: #042331;
+    bottom: 3%;
 }
 .logo-container a {
     display: inline-block; /* Umožnit zarovnání loga na střed */
     align-items: center;
     padding: 0 0 0 0;
-    border: 2px solid #042331;
     color: #042331;
     width: 30%;
+    margin-left: 13px;
+
 }
 .logo-container img {
     max-width: 45%; /* Nastavte velikost loga podle potřeby */
-    margin-left: 32px;
+    margin-left: 28px;
     margin-top: 5px
 }
 .logo-spin:hover {
@@ -128,15 +132,7 @@ body {
     transition: transform 1.5s;
 }
 .logo-container a:hover {
-    color: #111;
     background: #042331;
-}
-.logo-container .discord-logo {
-    max-width: 63%;
-    margin-left: 22px; 
-}
-.logo-container .first-logo {
-    margin-left: 15px; 
 }
 
 @media screen and (max-width: 830px) {
