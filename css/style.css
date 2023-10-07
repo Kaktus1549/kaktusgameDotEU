@@ -13,7 +13,6 @@ body {
     background-attachment: fixed;
     background-position: right;
 }
-
 .sidebar h1{
     font-size: 40px;
     color: #22C723;
@@ -22,19 +21,16 @@ body {
     margin-left: -15px;
     margin-bottom: 13px;
 }
-
 .title-container {
     display: flex;
     align-items: flex-end; /* Umístí obrázek na spodní okraj nadpisu */
     margin: 0 5%; /* Odsazení zleva a zprava stejné jako u nadpisu */
 }
-
 .image-container {
     position: relative; /* Nastavíme relativní pozici pro kontejner obrázku */
     margin-left: -35px; /* Odsazení mezi obrázkem a nadpisem */
     margin-bottom: -12px;
 }
-
 .image-container img {
     max-width: 100px; /* Nastavte maximální šířku obrázku podle vašich potřeb */
     display: block;
@@ -42,7 +38,6 @@ body {
     z-index: 1;
     cursor: pointer;
 }
-
 .image-container::before {
     content: "";
     display: block;
@@ -54,7 +49,6 @@ body {
     left: 0;
     width: 100%; /* 100% šířka kontejneru */
 }
-
 .sidebar{
     position: absolute;
     top: 0;
@@ -70,11 +64,11 @@ body {
     border-top: 1px solid #ccc; /* Styly pro čáru */
     margin: 10px 0; /* Odsazení nad a pod čarou */
 }
-
 .sidebar a {
     padding: 8px 18px 18px 82px;
     text-decoration: none;
     font-size: 210%;
+    font-family: 'Oxygen', sans-serif;
     color: white;
     display: block;
     transition: 0.3s;
@@ -83,7 +77,6 @@ body {
     color: #111;
     background: #fff;
 }
-
 .feedback-container {
     position: absolute;
     bottom: 9%;
@@ -93,6 +86,7 @@ body {
     padding: 5px 100% 1px 82px;
     text-decoration: none;
     font-size: 315%;
+    font-family: 'Oxygen', sans-serif;
     color: white;
     display: block;
     width: 157px;
@@ -103,7 +97,6 @@ body {
     color: #111;
     background: #fff;
 }
-
 .logo-container {
     display: flex;
     flex-direction: row;
@@ -134,11 +127,10 @@ body {
 .logo-container a:hover {
     background: #042331;
 }
-
 @media screen and (max-width: 830px) {
     .sidebar h1{
         font-size: 22px;
-        margin-left: 2px;
+        margin-left: -6px;
         margin-bottom: 6px;
     }
     .sidebar {
@@ -156,5 +148,25 @@ body {
     }
     .image-container img {
         max-width: 70px;
+    }
+    .feedback-container {
+        bottom: 9%;
+        margin-left: -10px;
+    }
+    .feedback-container a{
+        margin-left: 0px;
+        width: 205px;
+        font-size: 225%;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+    .logo-container {
+        bottom: 2%;
+        margin-left: -32px;
+    }
+    .logo-container img {
+        max-width: 120%;
+        margin-left: 2px;
+        margin-top: 0px;
     }
 }
