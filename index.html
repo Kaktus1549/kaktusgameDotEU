@@ -44,14 +44,14 @@
         const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
 
-        // Přidání event listeneru pro kliknutí na obrázek
+        if(window.innerWidth <= 830) {
+            sidebar.classList.add("left");
+        }
         menuImage.addEventListener("click", () => {
-            // Pokud má .sidebar třídu "left", zavřít menu
             if (sidebar.classList.contains("left")) {
                 sidebar.classList.remove("left");
                 sidebar.classList.add("right");
             } else {
-                // Jinak otevřít menu přidáním třídy "left"
                 sidebar.classList.remove("right");
                 sidebar.classList.add("left");
             }
