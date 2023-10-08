@@ -14,9 +14,12 @@
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
-                    <img id="menuImage" src="./images/menuImage.png" alt="Menu Image" data-state="open"> 
+                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image" data-state="open"> 
             </div>
             <h1>KaktusGame</h1>
+            <div class="menu-container">
+                <img id="menuImage" src="./images/menuImage.png" alt="Menu Image">
+            </div>
         </div>
         <hr>
         <a href="#">dokaz ff</a>
@@ -38,17 +41,20 @@
         </div>
     </aside>
     <script>
-        var toggleButton = document.getElementById("menuImage");
+        const menuImage = document.getElementById("menuImage");
+        const sidebar = document.querySelector(".sidebar");
 
-        toggleButton.addEventListener("click", function() {
-        var currentState = toggleButton.getAttribute("data-state");
-
-        if (currentState === "closed") {
-        toggleButton.setAttribute("data-state", "open");
-        } 
-        else {
-        toggleButton.setAttribute("data-state", "closed");
-    }
+        // Přidání event listeneru pro kliknutí na obrázek
+        menuImage.addEventListener("click", () => {
+            // Pokud má .sidebar třídu "left", zavřít menu
+            if (sidebar.classList.contains("left")) {
+                sidebar.classList.remove("left");
+                sidebar.classList.add("right");
+            } else {
+                // Jinak otevřít menu přidáním třídy "left"
+                sidebar.classList.remove("right");
+                sidebar.classList.add("left");
+            }
         });
     </script>
 </body>
