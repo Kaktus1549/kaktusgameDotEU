@@ -163,6 +163,26 @@ body {
     transform: translateX(0%);
     transition: transform 0.3s ease;
 }
+.page-title {
+    width: 100%;
+    font-size: 200%;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 42px; /* Umístí nadpis na vrchol stránky */
+    left: 0; /* Zarovná nadpis na levý okraj stránky */
+}
+.title-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+}
+h2{
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: 110px;
+}
 @media screen and (max-width: 830px) {
     .sidebar h1{
         font-size: 22px;
