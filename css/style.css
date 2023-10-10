@@ -88,6 +88,7 @@ body {
 }
 .sidebar a {
     padding: 8px 18px 18px 82px;
+    margin-bottom: 5%;
     text-decoration: none;
     font-size: 210%;
     font-family: 'Oxygen', sans-serif;
@@ -95,19 +96,25 @@ body {
     display: block;
     transition: 0.3s;
 }
+.selected {
+    background: #203966;
+}
+.non-selected {
+    background: #042331;
+}
 .sidebar a:hover {
-    color: #111;
-    background: #fff;
+    background: #203966;
 }
 .feedback-container {
     position: absolute;
-    bottom: 9%;
+    bottom: 10%;
     margin-bottom: 22px;
 }
 .feedback-container a {
     padding: 5px 100% 1px 82px;
     text-decoration: none;
-    font-size: 315%;
+    font-size: 210%;
+    font-weight: bold;
     font-family: 'Oxygen', sans-serif;
     color: white;
     display: block;
@@ -116,8 +123,7 @@ body {
     margin-left: -32px;
 }
 .feedback-container a:hover {
-    color: #111;
-    background: #fff;
+    background: #203966;
 }
 .logo-container {
     display: flex;
