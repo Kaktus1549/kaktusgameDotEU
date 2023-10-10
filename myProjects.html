@@ -27,9 +27,9 @@
             </div>
         </div>
         <hr>
-        <a id="AboutMe" class="non-selected" href="./aboutMe.html">About me</a>
-        <a id="Skills" class="non-selected" href="./mySkills.html">What I can do</a>
-        <a id="Projects" class="selected" href="./myProjects.html">My projects</a>
+        <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
+        <a id="Skills" class="non-selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="Projects" class="selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
             <a href="#FeedBackLinkNotDone">Feedback</a>
         </div>
@@ -48,8 +48,10 @@
     <script>
         const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
+        var urlParams = new URLSearchParams(window.location.search);
+        var sidebar_status = urlParams.get("open");
         
-        if(window.innerWidth <= 830) {
+        if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }
         menuImage.addEventListener("click", () => {
