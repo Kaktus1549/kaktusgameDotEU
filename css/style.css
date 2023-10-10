@@ -8,14 +8,14 @@ body {
     overflow: hidden;
     background-color: black;
     color: white;
-    background-image: linear-gradient(to bottom right, black 64%, red 100%);
+    background-image: linear-gradient(to bottom right, black 64%, #203966 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
 }
 .sidebar h1{
     font-size: 40px;
-    color: #22C723;
+    color: #80AAF7;
     z-index: 2;
     font-family: Verdana;
     margin-left: 10px;
