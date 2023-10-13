@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <!--link to css-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
     <title>KaktusGame.eu</title>
     <link rel="icon" href="./images/kak.png">
 </head>
 <body>
+    <div class="page-title">
+        <h1>About me</h1>
+    </div>
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
                     <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image"> 
             </div>
-            <h1>KaktusGame</h1>
+            <h2>KaktusGame</h2>
             <div class="menu-container">
                 <img id="menuImage" src="./images/menuImage.png" alt="Menu Image">
             </div>
         </div>
         <hr>
-        <a id="AboutMe" class="selected" href="#">About me</a>
-        <a id="Skills" class="non-selected" href="#">What I can do</a>
-        <a id="Projects" class="non-selected" href="#">My projects</a>
+        <a id="AboutMe" class="selected" href="./aboutMe.html?open=true">About me</a>
+        <a id="Skills" class="non-selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="Projects" class="non-selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
             <a href="#FeedBackLinkNotDone">Feedback</a>
         </div>
@@ -41,11 +44,14 @@
             </a>
         </div>
     </aside>
+    <p class="aboutMe">Hey! Hey! Glad to see you on my site. My name is Ondřej, but I&#39;m better known online as Kaktus (or Kaktus1549) and I&#39;m currently studying cybersecurity in high school. I&#39;m mostly interested in computers (networking, programming, ...), modern history (events like Battle of Mogadishu or Operation Neptune Spear), or airplanes. I created this site as a &quot;challenge&quot; for myself and it would not have been possible without my friends. If you have any questions, feel free to contact me on <a href="https://www.instagram.com/kaktus1549_/" class="link">instagram</a> or discord (Kaktus1549).</p>
     <script>
         const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
-
-        if(window.innerWidth <= 830) {
+        var urlParams = new URLSearchParams(window.location.search);
+        var sidebar_status = urlParams.get("open");
+        
+        if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }
         menuImage.addEventListener("click", () => {

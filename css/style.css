@@ -13,7 +13,40 @@ body {
     background-attachment: fixed;
     background-position: right;
 }
-.sidebar h1{
+h1{
+    margin-top: 2px;
+    font-family: 'Oxygen Mono', sans-serif;
+    color: #DBB701;
+    margin-bottom: 0;
+    font-size: 300%;
+    margin-left: 70px;
+}
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 250%;
+    margin-right: 80px;
+}
+h3{
+    font-family: 'Oxygen Mono', sans-serif;
+    text-align: left;
+    font-size: 275%;
+    margin-top: -200px;
+    color: #DBB701;
+}
+.big p{
+    font-family: 'Oxygen Mono', sans-serif;
+    text-align: left;
+    font-size: 275%;
+    font-weight: bold;
+    color: #DBB701;
+}
+.subtext{
+    width: 90vw;
+}
+.link{
+    color: #DBB701;
+}
+.sidebar h2{
     font-size: 40px;
     color: #80AAF7;
     z-index: 2;
@@ -163,8 +196,30 @@ body {
     transform: translateX(0%);
     transition: transform 0.3s ease;
 }
+.page-title {
+    width: 100%;
+    font-size: 200%;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 42px; 
+    left: 0; 
+}
+.aboutMe{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 250%;
+    margin-right: 80px;
+    margin-left: 120px;
+    margin-top: -420px;
+}
+#programming{
+    margin-top: -10px;
+}
 @media screen and (max-width: 830px) {
-    .sidebar h1{
+    .sidebar h2{
         font-size: 22px;
         margin-left: 8px;
         margin-bottom: 15px;
