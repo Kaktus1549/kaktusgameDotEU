@@ -30,7 +30,7 @@ h3{
     font-family: 'Oxygen Mono', sans-serif;
     text-align: left;
     font-size: 275%;
-    margin-top: -200px;
+    margin-top: -18%;
     color: #DBB701;
 }
 .big p{
@@ -269,5 +269,32 @@ h3{
     }
     .menu-container img {
         max-width: 85px;
+    }
+}
+@media screen and (max-height: 800px){
+    body{
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    .aboutMe{
+        margin-top: -8%;
+        font-size: 175%;
+    }
+    h1{
+        margin-top: 0px;
+        font-size: 220%;
+    }
+    .big p{
+        font-size: 195%;
+    }
+    h3{
+        font-size: 195%;
+        margin-top: 12%;
+    }
+    p{
+        font-size: 175%;
+    }
+    #programming{
+        margin-top: 25%;
     }
 }
