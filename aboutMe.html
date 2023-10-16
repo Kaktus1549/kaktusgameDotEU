@@ -54,7 +54,15 @@
         const sidebar = document.querySelector(".sidebar");
         var urlParams = new URLSearchParams(window.location.search);
         var sidebar_status = urlParams.get("open");
-        
+        var debug_mode = urlParams.get("debug")
+
+        if(debug_mode == "true"){
+                var windowHeight = window.innerHeight;
+                var windowWidth = window.innerWidth;
+                var message = "Window Height: " + windowHeight + " pixels\nWindow Width: " + windowWidth + " pixels";
+
+                alert(message);
+            }
         if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }
