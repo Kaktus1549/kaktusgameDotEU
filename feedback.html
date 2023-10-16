@@ -13,17 +13,9 @@
 </head>
 <body>
     <div class="pagetext">
-        <h1 id="skill-title">My skills</h1>
-        <h3 id="programming" >Programming</h3>
-        <p>I started programming in 2020 with Python which is my main programming language to this day. In school we are learning C#. In the future I would like to learn at least Java. I also have some experience with HTML, CSS, JavaScript and bash scripting.</p>
-        <div class="big">
-            <p id="networking">Networking</p>
-        </div>
-        <p>I am learning networking since 2022, when I started visiting CCNA courses at ČVUT (Czech Technical University in Prague). Currently I have CCNA 1 and CCNA 2 certificates and I have enrolled in CCNA 3 course in the moment of writing this. We are also learning networking in school, but it is not as advanced as the CCNA courses.</p>
-        <div class="big"> 
-            <p id="other">Other</p>
-        </div>
-        <p>Since I am studying cybersecurity, I have some experience with Linux (Debian, Kali Linux, CentOS, ...), virtualization (VMware, parallels, ...) and other stuff related to cybersecurity. I am currently helping with server administration at <a href="https://discord.gg/4EXfUmkdKD" class="link">Eternal Gaming</a>.</p> 
+        <h1 id="feedback-title">Your Feedback</h1>
+        <p id="feedback">I am glad that you spent some time on my website. I hope you found something interesting here. If you think that something is missing or you have any other feedback, please let me know. You can open an issue on <a href="https://github.com/Kaktus1549/kaktusgameDotEU/issues" class="link">GitHub</a>, contact me via email (hummelotup@seznam.cz) or via social media. I would like to make in-web feedback form, but I am not sure if it is worth it. Here is cat for now :3</p>
+        <img id="meow" src="./images/cat.png" alt="cat">
     </div>
     <aside class="sidebar">
         <div class="title-container">
@@ -37,10 +29,10 @@
         </div>
         <hr>
         <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
-        <a id="Skills" class="selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="Skills" class="non-selected" href="./mySkills.html?open=true">What I can do</a>
         <a id="Projects" class="non-selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
-            <a href="./feedback.html?open=true">Feedback</a>
+            <a href="./feedback.html?open=true" class="selected">Feedback</a>
         </div>
         <div class="logo-container">
             <a href="https://pterodactyl.kaktusgame.eu/">
@@ -54,9 +46,6 @@
             </a>
         </div>
     </aside>
-    
-
-    
     <script>
         const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
