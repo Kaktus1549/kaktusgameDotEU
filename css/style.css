@@ -269,7 +269,7 @@ h3{
     margin-left: 29%;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 900px) and (max-width:600px){
     body{
         overflow-y: scroll;
         overflow-x: hidden;
@@ -333,7 +333,7 @@ h3{
         font-size: 120%;
         margin-right: 15px;
         margin-left: 15px;
-        margin-top: 50%;
+        margin-top: 5%;
     }
     .aboutImage{
         margin-left: 2%;
@@ -352,7 +352,7 @@ h3{
         font-size: 175%;
     }
     #programming{
-        margin-top: 150%;
+        margin-top: 7%;
     }
     #meow{
         width: 75%;
@@ -362,7 +362,7 @@ h3{
         margin-top: -40px;
     }
     #feedback{
-        margin-top: 30%;
+        margin-top: 7%;
     }
     .skins img{
         width: 65%;
@@ -375,7 +375,27 @@ h3{
         width: 100%;
     }
     #kaktusgame{
-        margin-top: 280%;
+        margin-top: 5%;
+    }
+    #about-title{
+        margin-left: 27%;
+        font-size: 280%;
+        margin-top: 40%;
+    }
+    #skill-title{
+        margin-left: 27%;
+        font-size: 280%;
+        margin-top: 17%;
+    }
+    #project-title{
+        margin-left: 24%;
+        font-size: 280%;
+        margin-top: 17%;
+    }
+    #feedback-title{
+        margin-left: 25%;
+        font-size: 280%;
+        margin-top: 4%;
     }
 }
 @media screen and (min-height: 700px) and (max-height: 800px) and (min-width: 1300px) {
