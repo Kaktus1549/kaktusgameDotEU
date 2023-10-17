@@ -398,15 +398,13 @@ h3{
         margin-top: 4%;
     }
 }
-@media screen and (min-height: 700px) and (max-height: 800px) and (min-width: 1300px) {
+@media screen and (min-height: 700px) and (max-height: 800px) and (min-width: 1300px) and (max-width: 1500px) {
     body{
         overflow-y: scroll;
         overflow-x: hidden;
     }
     .aboutMe{
-        margin-top: -8%;
         font-size: 175%;
-        margin-top: 43%;
     }
     .aboutImage{
         margin-left: 17%;
@@ -426,19 +424,107 @@ h3{
         font-size: 175%;
     }
     #programming{
-        margin-top: 25%;
+        margin-top: 3%;
     }
     #kaktusgame{
-        margin-top: 140%;
+        margin-top: 4%;
     }
     #leaderboard{
         margin-left: 25%;
     }
     #feedback{
-        margin-top:25%;
+        margin-top:4%;
     }
     .pagetext{
         margin-left: 75px;
     }
+    #about-title{
+        margin-left: 40%;
+        font-size: 500%;
+        margin-top: 36%;
+    }
+    #skill-title{
+        margin-left: 35%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
+    #project-title{
+        margin-left: 33%;
+        font-size: 500%;
+        margin-top: 3%;
+    }
+    #feedback-title{
+        margin-left: 30%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
 
+
+}
+@media screen and (min-height: 900) and (max-height: 960px) {
+    .menu-container{
+        margin-left: 3.70vw;
+    }
+    
+}
+@media screen and (min-height: 801px) and (max-height: 1000px) and (min-width: 1501px) and (max-width: 2000px) {
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .aboutMe{
+        font-size: 175%;
+    }
+    .aboutImage{
+        margin-left: 17%;
+    }
+    h1{
+        margin-top: 0px;
+        font-size: 220%;
+    }
+    .big p{
+        font-size: 195%;
+    }
+    h3{
+        font-size: 195%;
+        margin-top: 12%;
+    }
+    p{
+        font-size: 175%;
+    }
+    #programming{
+        margin-top: 3%;
+    }
+    #kaktusgame{
+        margin-top: 4%;
+    }
+    #leaderboard{
+        margin-left: 25%;
+    }
+    #feedback{
+        margin-top:4%;
+    }
+    .pagetext{
+        margin-left: 75px;
+    }
+    #about-title{
+        margin-left: 40%;
+        font-size: 500%;
+        margin-top: 76%;
+    }
+    #skill-title{
+        margin-left: 35%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
+    #project-title{
+        margin-left: 33%;
+        font-size: 500%;
+        margin-top: 3%;
+    }
+    #feedback-title{
+        margin-left: 30%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
 }
