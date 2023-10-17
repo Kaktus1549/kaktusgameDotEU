@@ -1,0 +1,3 @@
+# Feedback
+
+I am glad that you spent some time on my website. I hope you found something interesting here. If you think that something is missing or you have any other feedback, please let me know. You can open an issue on [GitHub](https://github.com/Kaktus1549/kaktusgameDotEU/issues), contact me via email (hummelotup@seznam.cz) or via social media. I would like to make in-web feedback form, but I am not sure if it is worth it. Here is cat for now :3
