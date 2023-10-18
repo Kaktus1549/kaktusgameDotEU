@@ -271,26 +271,18 @@ h3{
 /* Media queries for mobile devices */
 /* Media queries for images, sidebar, ...*/
 @media screen and (max-width:1000px){
-    body {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    
     h1 {
         font-size: 140%;
     }
-    
     .sidebar h2 {
         font-size: 22px;
         margin-left: 8px;
         margin-bottom: 15px;
     }
-    
     .sidebar {
         width: 235px;
         border-right: 6px solid #203966;
     }
-    
     .sidebar a {
         padding: 8px 18px 18px 10%;
         font-size: 180%;
@@ -403,25 +395,47 @@ h3{
     }
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width:370px) {
     #about-title {
-        font-size: 315%;
+        font-size: 250%;
+        margin-left: 21vw;
+        margin-top: 60px;
+    }
+    #feedback-title {
+        font-size: 200%;
+        margin-left: 19vw;
+    }
+    #project-title {
+        font-size: 230%;
+        margin-left: 21vw;
+        margin-top: 65px;
+    }
+    #skill-title {
+        font-size: 250%;
+        margin-left: 21vw;
+        margin-top: 65px;
+    }
+    #meow{
+        margin-left: 10vw;
+    }
+}
+@media screen and (min-width:371px) and (max-width: 400px) {
+    #about-title {
+        font-size: 299%;
         margin-left: 21vw;
         margin-top: 50px;
     }
-
     #skill-title {
-        font-size: 280%;
-        margin-left: 20vw;
+        font-size: 315%;
+        margin-left: 25vw;
     }
-
     #project-title {
-        font-size: 280%;
+        font-size: 270%;
         margin-left: 20vw;
+        margin-top: 63px;
     }
-
     #feedback-title {
-        font-size: 220%;
+        font-size: 218%;
         margin-left: 20vw;
         margin-top: 65px;
     }
@@ -434,18 +448,213 @@ h3{
     }
 
     #skill-title {
-        font-size: 280%;
-        margin-left: 22vw;
+        font-size: 320%;
+        margin-left: 28vw;
     }
 
     #project-title {
         font-size: 280%;
         margin-left: 22vw;
+        margin-top: 61px;
     }
 
     #feedback-title {
         font-size: 220%;
         margin-left: 20vw;
         margin-top: 65px;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 850px) {
+    #about-title {
+        font-size: 375%;
+        margin-left: 29vw;
+        margin-top: 50px;
+    }
+
+    #skill-title {
+        font-size: 320%;
+        margin-left: 28vw;
+    }
+
+    #project-title {
+        font-size: 280%;
+        margin-left: 22vw;
+        margin-top: 61px;
+    }
+
+    #feedback-title {
+        font-size: 220%;
+        margin-left: 20vw;
+        margin-top: 65px;
+    }
+}
+@media screen and (min-width: 851px) and (max-width: 1000px) {
+    #about-title {
+        font-size: 375%;
+        margin-left: 32vw;
+        margin-top: 50px;
+    }
+    #skill-title {
+        font-size: 320%;
+        margin-left: 28vw;
+    }
+    #project-title {
+        font-size: 280%;
+        margin-left: 22vw;
+        margin-top: 61px;
+    }
+    #feedback-title {
+        font-size: 220%;
+        margin-left: 20vw;
+        margin-top: 65px;
+    }
+}
+@media screen and (min-width: 1299px){
+    .sidebar{
+        width: 414.9px;
+    }
+    .aboutMe{
+        font-size: 175%;
+    }
+    .aboutImage{
+        margin-left: 17%;
+    }
+    h1{
+        margin-top: 0px;
+        font-size: 220%;
+    }
+    .big p{
+        font-size: 195%;
+    }
+    h3{
+        font-size: 195%;
+        margin-top: 12%;
+    }
+    p{
+        font-size: 175%;
+        margin-left: 45px;
+    }
+    #programming{
+        margin-top: 3%;
+    }
+    #kaktusgame{
+        margin-top: 4%;
+    }
+    #leaderboard{
+        margin-left: 25%;
+    }
+    #feedback{
+        margin-top:4%;
+    }
+    .pagetext{
+        margin-left: 75px;
+    }
+    #about-title{
+        margin-left: 40%;
+        font-size: 500%;
+        margin-top: 55px;
+    }
+    #skill-title{
+        margin-left: 35%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
+    #project-title{
+        margin-left: 33%;
+        font-size: 500%;
+        margin-top: 3%;
+    }
+    #feedback-title{
+        margin-left: 30%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
+    .menu-container{
+        margin-left: 46px;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width:1299px){
+    #about-title {
+        margin-left: 32vw;
+    }
+    #skill-title {
+        font-size: 320%;
+        margin-left: 28vw;
+    }
+    .aboutImage{
+        margin-left: 55px;
+        width: 90%;
+    }
+    #project-title {
+        font-size: 280%;
+        margin-left: 22vw;
+        margin-top: 61px;
+    }
+
+    #feedback-title {
+        font-size: 220%;
+        margin-left: 20vw;
+        margin-top: 65px;
+    }
+}
+@media screen and (min-width:1300px) and (max-width:1500px){
+    .aboutMe{
+        font-size: 175%;
+    }
+    .aboutImage{
+        margin-left: 95px;
+    }
+    h1{
+        margin-top: 0px;
+        font-size: 220%;
+    }
+    .big p{
+        font-size: 195%;
+    }
+    h3{
+        font-size: 195%;
+        margin-top: 12%;
+    }
+    p{
+        font-size: 175%;
+    }
+    #programming{
+        margin-top: 3%;
+        margin-left: 45px;
+    }
+    #rocket{
+        margin-left: 47px;
+    }
+    #kaktusgame{
+        margin-top: 4%;
+        margin-left: 45px;
+    }
+    #leaderboard{
+        margin-left: 25%;
+    }
+    #feedback{
+        margin-top:4%;
+    }
+    .pagetext{
+        margin-left: 75px;
+    }
+    #about-title{
+        margin-left: 32vw;
+        font-size: 500%;
+    }
+    #skill-title{
+        margin-left: 35%;
+        font-size: 500%;
+        margin-top: 4%;
+    }
+    #project-title{
+        margin-left: 33%;
+        font-size: 500%;
+        margin-top: 3%;
+    }
+    #feedback-title{
+        margin-left: 30%;
+        font-size: 500%;
+        margin-top: 4%;
     }
 }
