@@ -62,17 +62,17 @@ h3{
 }
 .title-container {
     display: flex;
-    align-items: flex-end; /* Umístí obrázek na spodní okraj nadpisu */
-    margin: 0 5%; /* Odsazení zleva a zprava stejné jako u nadpisu */
+    align-items: flex-end;
+    margin: 0 5%;
     margin-top: 1px;
 }
 .image-container {
-    position: relative; /* Nastavíme relativní pozici pro kontejner obrázku */
-    margin-left: -35px; /* Odsazení mezi obrázkem a nadpisem */
+    position: relative;
+    margin-left: -35px;
     margin-bottom: -12px;
 }
 .image-container img {
-    max-width: 65px; /* Nastavte maximální šířku obrázku podle vašich potřeb */
+    max-width: 65px;
     margin-left: 25px;
     margin-bottom: 25px;
     display: block;
@@ -83,13 +83,13 @@ h3{
 .image-container::before {
     content: "";
     display: block;
-    padding-top: 100%; /* Vytvoří čtvercový kontejner na základě šířky obrázku */
+    padding-top: 100%;
     background: #042331;
     position: absolute;
     top: -25px;
     height: 20px;
     left: 0;
-    width: 100%; /* 100% šířka kontejneru */
+    width: 100%;
 }
 .menu-container {
     position: relative;
@@ -122,8 +122,8 @@ h3{
 }
 .sidebar hr {
     border: none;
-    border-top: 1px solid #ccc; /* Styly pro čáru */
-    margin: 10px 0; /* Odsazení nad a pod čarou */
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
 }
 .sidebar a {
     padding: 8px 18px 18px 82px;
@@ -173,7 +173,7 @@ h3{
     bottom: 3%;
 }
 .logo-container a {
-    display: inline-block; /* Umožnit zarovnání loga na střed */
+    display: inline-block;
     align-items: center;
     padding: 0 0 0 0;
     color: #042331;
@@ -182,7 +182,7 @@ h3{
 
 }
 .logo-container img {
-    max-width: 45%; /* Nastavte velikost loga podle potřeby */
+    max-width: 45%;
     margin-left: 28px;
     margin-top: 5px
 }
@@ -268,8 +268,6 @@ h3{
     width: 35%;
     margin-left: 29vw;
 }
-/* Media queries for mobile devices */
-/* Media queries for images, sidebar, ...*/
 @media screen and (max-width:1000px){
     h1 {
         font-size: 140%;
@@ -287,24 +285,19 @@ h3{
         padding: 8px 18px 18px 10%;
         font-size: 180%;
     }
-    
     .title-container {
         margin: 0 3%;
     }
-    
     .image-container {
         margin-left: -25px;
     }
-    
     .image-container img {
         max-width: 48px;
     }
-    
     .feedback-container {
         bottom: 9%;
         margin-left: -10px;
     }
-    
     .feedback-container a {
         margin-left: 0px;
         width: 205px;
@@ -312,88 +305,70 @@ h3{
         padding-bottom: 1px;
         padding-top: 1px;
     }
-    
     .logo-container {
         bottom: 2%;
         margin-left: -32px;
     }
-    
     .logo-container img {
         max-width: 120%;
         margin-left: 2px;
         margin-top: 0px;
     }
-    
     .menu-container {
         margin-left: 7.5%;
         border-right: 6px solid #203966;
         border-bottom: 6px solid #203966;
         border-top: 6px solid #203966;
     }
-    
     .menu-container img {
         max-width: 85px;
     }
-    
     .aboutMe {
         font-size: 139%;
     }
-    
     .aboutImage {
         width: 100%;
         margin-left: 0;
     }
-    
     h3 {
         font-size: 175%;
     }
-    
     p {
         font-size: 120%;
         margin-right: 0;
     }
-    
     .big p {
         font-size: 175%;
     }
-    
     #meow {
         width: 75%;
         margin-left: 45px;
     }
-    
     .skins img {
         width: 65%;
     }
-    
     #rocket {
         width: 70%;
     }
-    
     #leaderboard {
         width: 100%;
         margin-left: 0;
     }
-    
     #feedback-title {
         font-size: 220%;
         margin-left: 20vw;
         margin-top: 65px;
     }
-    
     .pagetext {
         margin-left: 25px;
         margin-right: 25px;
     }
-    
     #kaktusgame {
         margin-top: 25px;
     }
-    
     #feedback {
         margin-top: 25px;
     }
-    
 }
 @media screen and (max-width:370px) {
     #about-title {
@@ -446,18 +421,15 @@ h3{
         margin-left: 23vw;
         margin-top: 50px;
     }
-
     #skill-title {
         font-size: 320%;
         margin-left: 28vw;
     }
-
     #project-title {
         font-size: 280%;
         margin-left: 22vw;
         margin-top: 61px;
     }
-
     #feedback-title {
         font-size: 220%;
         margin-left: 20vw;
@@ -470,18 +442,15 @@ h3{
         margin-left: 29vw;
         margin-top: 50px;
     }
-
     #skill-title {
         font-size: 320%;
         margin-left: 28vw;
     }
-
     #project-title {
         font-size: 280%;
         margin-left: 22vw;
         margin-top: 61px;
     }
-
     #feedback-title {
         font-size: 220%;
         margin-left: 20vw;
@@ -509,7 +478,7 @@ h3{
         margin-top: 65px;
     }
 }
-@media screen and (min-width: 1299px){
+@media screen and (min-width: 1299px) and (max-width: 1500px){
     .sidebar{
         width: 414.9px;
     }
@@ -590,7 +559,6 @@ h3{
         margin-left: 22vw;
         margin-top: 61px;
     }
-
     #feedback-title {
         font-size: 220%;
         margin-left: 20vw;
