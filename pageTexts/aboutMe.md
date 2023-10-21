@@ -1,3 +1,0 @@
-# About me page
-
-Hey! Hey! Glad to see you on my site. My name is Andrew, but I'm better known online as Kaktus (or Kaktus1549) and I'm currently studying cybersecurity in high school. I'm mostly interested in computers (networking, programming, ...), modern history, or airplanes. In my free time, I like to play video games, listen to music, or playing sports such as airsoft or climbing. I created this site as a "challenge" for myself and it would not have been possible without my friends. If you have any questions, feel free to contact me on [instagram](https://www.instagram.com/kaktus1549_/) or discord (Kaktus1549).

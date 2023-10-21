@@ -20,15 +20,15 @@
             <p id="networking">Networking</p>
         </div>
         <p>I am learning networking since 2022, when I started visiting CCNA courses at ČVUT (Czech Technical University in Prague). Currently I have CCNA 1 and CCNA 2 certificates and I have enrolled in CCNA 3 course in the moment of writing this. We are also learning networking in school, but it is not as advanced as the CCNA courses.</p>
-        <div class="big"> 
+        <div class="big">
             <p id="other">Other</p>
         </div>
-        <p>Since I am studying cybersecurity, I have some experience with Linux (Debian, Kali Linux, CentOS, ...), virtualization (VMware, parallels, ...) and other stuff related to cybersecurity. I am currently helping with server administration at <a href="https://discord.gg/4EXfUmkdKD" class="link">Eternal Gaming</a>.</p> 
+        <p>Since I am studying cybersecurity, I have some experience with Linux (Debian, Kali Linux, CentOS, ...), virtualization (VMware, parallels, ...) and other stuff related to cybersecurity. I am currently helping with server administration at <a href="https://discord.gg/4EXfUmkdKD" class="link">Eternal Gaming</a>.</p>
     </div>
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
-                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image"> 
+                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image">
             </div>
             <h2>KaktusGame</h2>
             <div class="menu-container">
@@ -37,7 +37,7 @@
         </div>
         <hr>
         <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
-        <a id="Skills" class="selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="My skills" class="selected" href="./mySkills.html?open=true">My skills</a>
         <a id="Projects" class="non-selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
             <a href="./feedback.html?open=true">Feedback</a>
@@ -54,15 +54,15 @@
             </a>
         </div>
     </aside>
-    
 
-    
+
+
     <script>
         const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
         var urlParams = new URLSearchParams(window.location.search);
         var sidebar_status = urlParams.get("open");
-        
+
         if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }

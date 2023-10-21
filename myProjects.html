@@ -16,10 +16,10 @@
         <h1 id="project-title">My projects</h1>
         <h3 id="kaktusgame"><a href="https://kaktusgame.eu/" class="link">KaktusGame.eu</a></h3>
         <p>I made this website as &quot;challenge&quot; for myself. It&#39;s mainly written in HTML, CSS and little bit of JavaScript. I use <a href="https://fonts.google.com/" class="link">Google fonts</a> for font styles, with colors I got mainly help from my friend Probin. It&#39;s simple website, but I never wanted to make it complicated. I&#39;m planning to add some more features in the future.</p>
-        <div class="big">        
+        <div class="big">
             <p><a href="https://github.com/Kaktus1549/Meteor-Game" class="link">Meteor game</a></p>
         </div>
-        <p>As my start of programming in Python, I made this simple 2D game with help of library called <a href="https://pypi.org/project/replit-play/" class="link">&quot;replit-play&quot;</a>. It&#39;s simple game, where you have to avoid meteors falling from the sky. You can control your spaceship with WASD keys. The code is probably terrible written, but it was my first bigger project in Python. </p>
+        <p>As my start of programming in Python, I made this simple 2D game with help of library called <a href="https://pypi.org/project/replit-play/" class="link">&quot;replit-play&quot;</a>. It&#39;s simple game, where you have to avoid meteors falling from the sky. You can control your spaceship with WASD keys. The code is probably terribly written, but it was my first bigger project in Python. </p>
         <img id="rocket" src="./images/gamePlay.png" alt="Game play">
         <div  class="skins">
             <img src="./images/Skins.png" alt="Skins">
@@ -33,7 +33,7 @@
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
-                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image"> 
+                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image">
             </div>
             <h2>KaktusGame</h2>
             <div class="menu-container">
@@ -42,7 +42,7 @@
         </div>
         <hr>
         <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
-        <a id="Skills" class="non-selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="My skills" class="non-selected" href="./mySkills.html?open=true">My skills</a>
         <a id="Projects" class="selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
             <a href="./feedback.html?open=true">Feedback</a>
@@ -64,7 +64,7 @@
         const sidebar = document.querySelector(".sidebar");
         var urlParams = new URLSearchParams(window.location.search);
         var sidebar_status = urlParams.get("open");
-        
+
         if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }

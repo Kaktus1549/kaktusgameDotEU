@@ -20,7 +20,7 @@
     <aside class="sidebar">
         <div class="title-container">
             <div class="image-container">
-                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image"> 
+                    <img id="kaktusgameLogo" src="./images/kak.png" alt="Menu Image">
             </div>
             <h2>KaktusGame</h2>
             <div class="menu-container">
@@ -29,7 +29,7 @@
         </div>
         <hr>
         <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
-        <a id="Skills" class="non-selected" href="./mySkills.html?open=true">What I can do</a>
+        <a id="My skills" class="non-selected" href="./mySkills.html?open=true">My skills</a>
         <a id="Projects" class="non-selected" href="./myProjects.html?open=true">My projects</a>
         <div class="feedback-container">
             <a href="./feedback.html?open=true" class="selected">Feedback</a>
@@ -51,7 +51,7 @@
         const sidebar = document.querySelector(".sidebar");
         var urlParams = new URLSearchParams(window.location.search);
         var sidebar_status = urlParams.get("open");
-        
+
         if(sidebar_status != "true") {
             sidebar.classList.add("left");
         }
