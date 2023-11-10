@@ -55,11 +55,11 @@
             </div>
         </div>
         <hr>
-        <a id="AboutMe" class="non-selected" href="./aboutMe.html?open=true">About me</a>
-        <a id="My skills" class="selected" href="./mySkills.html?open=true">My skills</a>
-        <a id="Projects" class="non-selected" href="./myProjects.html?open=true">My projects</a>
+        <a id="AboutMe" class="non-selected" href="./aboutMe.html">About me</a>
+        <a id="My skills" class="selected" href="./mySkills.html">My skills</a>
+        <a id="Projects" class="non-selected" href="./myProjects.html">My projects</a>
         <div class="feedback-container">
-            <a href="./feedback.html?open=true">Feedback</a>
+            <a href="./feedback.html">Feedback</a>
         </div>
         <div class="logo-container">
             <a href="https://pterodactyl.kaktusgame.eu/">
@@ -77,21 +77,37 @@
 
 
     <script>
-        const menuImage = document.getElementById("menuImage");
         const sidebar = document.querySelector(".sidebar");
-        var urlParams = new URLSearchParams(window.location.search);
-        var sidebar_status = urlParams.get("open");
+        const menuImage = document.getElementById("menuImage");
 
-        if(sidebar_status != "true") {
-            sidebar.classList.add("left");
-        }
-        menuImage.addEventListener("click", () => {
-            if (sidebar.classList.contains("left")) {
+        function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        return parts.pop().split(';').shift();
+      }
+      var sidebarStatus = getCookie("sidebar_status");
+      if (sidebarStatus === undefined) {
+        document.cookie = "sidebar_status=False; " + "; path=/";
+        var sidebarStatus = "False"
+      }
+      if (sidebarStatus === "False"){
+        sidebar.classList.add("left");
+      }
+      if (sidebarStatus === "True"){
+        sidebar.classList.add("right");
+      }
+      menuImage.addEventListener("click", () => {
+            if (sidebarStatus === "False") {
                 sidebar.classList.remove("left");
                 sidebar.classList.add("right");
+                sidebarStatus = "True"
+                document.cookie = "sidebar_status=True; " + "; path=/";
+
             } else {
                 sidebar.classList.remove("right");
                 sidebar.classList.add("left");
+                sidebarStatus = "False"
+                document.cookie = "sidebar_status=False; " + "; path=/";
             }
         });
     </script>
