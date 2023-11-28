@@ -1,3 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to bottom right, black 64%, #203966 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 button{
     width: 225px;
     height: 65px;
@@ -15,10 +33,50 @@ button:hover{
     background-color: #203966;
     border: 4px solid #042331;
 }
+img{
+    width: 400px; 
+    border-radius: 15px;
+    border: 4px solid #203966;
+    transition: 0.4s ease-in-out;
+}
+img:hover{
+    border: 4px solid #203966;
+    transform: translate(0, -15px);
+}
+p{
+    margin-left: 18px;
+    margin-right: 14px;
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+}
 .mainpage-button{
-    position: absolute;
+    position: fixed;
     left: 0;
     top:0 ;
     margin-top: 15px;
     margin-left: 15px;
+}
+.main-container{
+    position: absolute;
+    width: 408px;
+    top: 105px;
+    margin-bottom: 20px;
+}
+.main-container p{
+    margin-top: 15px;
+}
+.main-container button{
+    margin-top: 8.5px;
+    margin-left: 65px;
+    width: 278px;
+}
+.signature{
+    position: fixed;
+    bottom: 6px;
+    right: 15px;
+}
+.signature p{
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
 }
