@@ -33,15 +33,29 @@
 </head>
     <body>
         <div class="mainpage-button">
-            <button  onclick="window.location.href='https://kaktusgame.eu'">Back to main page</button>
+            <button  onclick="window.location.href='https://kaktusgame.eu'">Hlavní stránka</button>
         </div>
         <div class="main-container">
-            <img src="../images/tux.png" alt="tux">
-            <p>Co si myslíš, že vím o tobě? Jseš si jistý, že jsi na internetu zcela anonymní? Stačí jen kliknout na tlačítko a já ti ukážu, co všechno jsem o tobě zjistil!</p>
-            <button>Ukaž mi to!</button>
+            <img src="../images/tux.png" alt="tux" id="tux">
+            <p id="stalkyIntro">Co si myslíš, že vím o tobě? Jseš si jistý, že jsi na internetu zcela anonymní? Stačí jen kliknout na tlačítko a já ti ukážu, co všechno jsem o tobě zjistil!</p>
+            <button id="stalkyButton" onclick="stalky();">Ukaž mi to!</button>
         </div>
         <div class="signature">
             <p>Made by Kaktus1549</p>
         </div>
     </body>
+    <script>
+        function disappear(){
+            const tux = document.getElementById("tux");
+            const text = document.getElementById("stalkyIntro");
+            const button = document.getElementById("stalkyButton");
+            
+            tux.classList.add("element-dissapear");
+            text.classList.add("element-dissapear");
+            button.classList.add("element-dissapear");
+        }
+        function stalky(){
+            disappear();
+        }
+    </script>
 </html>
