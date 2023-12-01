@@ -50,7 +50,7 @@ def index():
                     "os": user_agent.os.family,
                     "osVersion": user_agent.os.version_string,
                     "browser": user_agent.browser.family,
-                    "ip": request.remote_addr,
+                    "ip": client_ip,
                     "country": None,
                     "city": None,
                     "timezone": None
