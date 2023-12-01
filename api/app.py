@@ -51,7 +51,7 @@ def index():
                     "osVersion": user_agent.os.version_string,
                     "browser": user_agent.browser.family,
                     "ip": client_ip,
-                    "country": None,
+                    "state": None,
                     "city": None,
                     "timezone": None
                 }
