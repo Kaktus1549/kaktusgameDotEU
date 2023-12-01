@@ -2,15 +2,16 @@ from flask import Flask, request, redirect
 from flask_cors import CORS
 from user_agents import parse
 import requests
-import json
+import os
 
 app = Flask(__name__)
 CORS(app)
-with open('config.json') as config_file:
-    config = json.load(config_file)
+token = os.environ.get('TOKEN', "None")
 
 def get_ip_data(ip):
-    url = f"https://ipinfo.io/{ip}?token={config['token']}"
+    if token == "None":
+        return None
+    url = f"https://ipinfo.io/{ip}?token={token}"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
