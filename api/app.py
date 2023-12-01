@@ -64,4 +64,4 @@ def index():
         redirect_url = "https://kaktusgame.eu/error.html?code=403"
         return redirect(redirect_url, code=302)
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
