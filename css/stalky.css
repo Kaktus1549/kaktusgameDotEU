@@ -86,6 +86,30 @@ p{
     animation: dissapear 0.7s ease-in-out forwards;
 
 }
+.hide{
+    display: none;
+}
+.stalky-container{
+    position: absolute;
+    top: 255px;
+    margin-left: -250px;
+}
+.stalky-container p{
+    margin: 0 0 0 0;
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px;
+}
+.stalky-container span{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.element-appear{
+    animation: appear 0.7s ease-in-out forwards;
+}
+
 @keyframes dissapear{
     0%{
       opacity: 1;
@@ -93,6 +117,15 @@ p{
     100%{
       opacity: 0;
       display: none;
+    }
+}
+@keyframes appear{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      display: block;
     }
 }
 @media screen and (max-width: 900px) {
