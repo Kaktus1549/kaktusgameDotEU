@@ -186,11 +186,20 @@ p{
         margin-left: 75px;
         margin-right: 65px;
     }
+    .main-container button{
+        width: 190px;
+        font-size: 19px;
+        height: 45px;
+    }
 }
-
 @media screen and (max-width:365px){
     .stalky-container{
         top: 105px;
+    }
+    .mainpage-button button{
+        width: 180px;
+        font-size: 19px;
+        height: 55px;
     }
 }
 @media screen and (max-width:290px) {
@@ -202,9 +211,18 @@ p{
         margin-left: 105px;
         margin-right: 95px;
     }
-
+    .mainpage-button button{
+        width: 170px;
+        font-size: 18px;
+        height: 44px;
+    }
 }
 @media screen and (max-width:275px){
+    .mainpage-button button{
+        width: 165px;
+        font-size: 17px;
+        height: 42px;
+    }
     .stalky-container{
         top: 95px;
     }
@@ -213,5 +231,10 @@ p{
     }
     .stalky-container span{
         font-size: 12px;
+    }
+    .main-container button{
+        width: 150px;
+        font-size: 17px;
+        height: 44px;
     }
 }
