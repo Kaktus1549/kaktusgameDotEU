@@ -23,6 +23,7 @@ def index():
     if request.method == 'POST':
         try:
             user_agent = parse(request.headers.get('User-Agent'))
+            client_ip = request.headers.get('X-Real-IP') or request.headers.get('X-Forwarded-For') or request.remote_addr
             ip_data = get_ip_data("89.103.132.145")
             if ip_data is not None:
                 if 'city' not in ip_data:
@@ -37,7 +38,7 @@ def index():
                     "os": user_agent.os.family,
                     "osVersion": user_agent.os.version_string,
                     "browser": user_agent.browser.family,
-                    "ip": request.remote_addr,
+                    "ip": client_ip,
                     "state": ip_data['country'],
                     "city": ip_data['city'],
                     "timezone": ip_data['timezone']
