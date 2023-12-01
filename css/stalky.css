@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,6 @@ p{
 .element-appear{
     animation: appear 0.7s ease-in-out forwards;
 }
-
 @keyframes dissapear{
     0%{
       opacity: 1;
@@ -138,6 +137,25 @@ p{
         display: none;
     }
 }
+@media screen and (max-width: 580px){
+    .stalky-container{
+        position: absolute;
+        top: 185px;
+        margin-left: 0;
+        left: 15px;
+    }
+}
+@media screen and (max-width: 510px){
+    .stalky-container{
+        top: 155px;
+    }
+    .stalky-container p{
+        font-size: 15px;
+    }
+    .stalky-container span{
+        font-size: 19px;
+    }
+}
 @media screen and (max-width:424px){
     img{
         width: 300px;
@@ -150,10 +168,10 @@ p{
         margin-left: 45px;
     }
     button{
-        width: 125px;
-        height: 45px;
+        width: 155px;
+        height: 55px;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 17px;
     }
     p{
         margin-left: 40px;
@@ -167,5 +185,75 @@ p{
     }    
     .main-container{
         top: 75px;
+    }
+    .stalky-container{
+        top: 125px;
+    }
+    .stalky-container p{
+        font-size: 10px;
+    }
+    .stalky-container span{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:365px){
+    img{
+        width: 250px;
+        margin-left: 80px;
+    }
+    button{
+        width: 125px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    p{
+        margin-left: 80px;
+        margin-right: 30px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .main-container button {
+        margin-left: 105px;
+        width: 180px;
+    }    
+    .main-container{
+        top: 75px;
+    }
+    .stalky-container{
+        top: 105px;
+    }
+}
+@media screen and (max-width:275px){
+    img{
+        margin-left: 100px;
+    }
+    button{
+        width: 125px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    p{
+        margin-left: 100px;
+        margin-right: 30px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .main-container button {
+        margin-left: 135px;
+        width: 180px;
+    }    
+    .main-container{
+        top: 75px;
+    }
+    .stalky-container{
+        top: 95px;
+    }
+    .stalky-container p{
+        font-size: 7px;
+    }
+    .stalky-container span{
+        font-size: 12px;
     }
 }
