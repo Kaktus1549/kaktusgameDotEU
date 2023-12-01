@@ -57,7 +57,10 @@ p{
     margin-left: 15px;
 }
 .main-container{
+    align-items: center;
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 408px;
     top: 105px;
     margin-bottom: 20px;
@@ -67,7 +70,6 @@ p{
 }
 .main-container button{
     margin-top: 8.5px;
-    margin-left: 65px;
     width: 278px;
 }
 .signature{
@@ -156,36 +158,17 @@ p{
         font-size: 19px;
     }
 }
-@media screen and (max-width:424px){
+@media screen and (max-width: 450px){
     img{
         width: 300px;
-        margin-left: 45px;
+    }
+    p{
+        font-size: 15px;
+        margin-left: 55px;
+        margin-right: 40px;
     }
 }
 @media screen and (max-width:410px){
-    img{
-        width: 300px;
-        margin-left: 45px;
-    }
-    button{
-        width: 155px;
-        height: 55px;
-        font-weight: 500;
-        font-size: 17px;
-    }
-    p{
-        margin-left: 40px;
-        margin-right: 30px;
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .main-container button {
-        margin-left: 105px;
-        width: 180px;
-    }    
-    .main-container{
-        top: 75px;
-    }
     .stalky-container{
         top: 125px;
     }
@@ -195,58 +178,33 @@ p{
     .stalky-container span{
         font-size: 14px;
     }
-}
-@media screen and (max-width:365px){
     img{
         width: 250px;
-        margin-left: 80px;
-    }
-    button{
-        width: 125px;
-        height: 45px;
-        font-weight: 500;
-        font-size: 15px;
     }
     p{
-        margin-left: 80px;
-        margin-right: 30px;
-        font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
+        margin-left: 75px;
+        margin-right: 65px;
     }
-    .main-container button {
-        margin-left: 105px;
-        width: 180px;
-    }    
-    .main-container{
-        top: 75px;
-    }
+}
+
+@media screen and (max-width:365px){
     .stalky-container{
         top: 105px;
     }
 }
-@media screen and (max-width:275px){
+@media screen and (max-width:290px) {
     img{
-        margin-left: 100px;
-    }
-    button{
-        width: 125px;
-        height: 45px;
-        font-weight: 500;
-        font-size: 15px;
+        width: 200px;
     }
     p{
-        margin-left: 100px;
-        margin-right: 30px;
-        font-weight: 400;
-        font-size: 14px;
+        font-size: 10px;
+        margin-left: 105px;
+        margin-right: 95px;
     }
-    .main-container button {
-        margin-left: 135px;
-        width: 180px;
-    }    
-    .main-container{
-        top: 75px;
-    }
+
+}
+@media screen and (max-width:275px){
     .stalky-container{
         top: 95px;
     }
