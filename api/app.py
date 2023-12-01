@@ -28,8 +28,8 @@ def index():
             if ip_data is not None:
                 if 'city' not in ip_data:
                     ip_data['city'] = None
-                if 'country' not in ip_data:
-                    ip_data['country'] = None
+                if 'state' not in ip_data:
+                    ip_data['state'] = None
                 if 'timezone' not in ip_data:
                     ip_data['timezone'] = None
                 return{
