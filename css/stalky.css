@@ -93,11 +93,12 @@ p{
 }
 .stalky-container{
     position: absolute;
-    top: 255px;
-    margin-left: -250px;
+    align-items: center;
+    top: 205px;
 }
 .stalky-container p{
     margin: 0 0 0 0;
+    flex-grow: 1;
     font-family: 'Oxygen Mono', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -107,6 +108,11 @@ p{
     font-family: 'Oxygen', sans-serif;
     font-weight: 800;
     font-size: 24px;
+}
+.stalky-container img{
+    float: right;
+    margin-left: 15px;
+    width: 450px;
 }
 .element-appear{
     animation: appear 0.7s ease-in-out forwards;
@@ -123,15 +129,39 @@ p{
 @keyframes appear{
     0%{
       opacity: 0;
+      display: flex;
     }
     100%{
       opacity: 1;
-      display: block;
+      display: flex;
     }
 }
 @media screen and (max-width: 900px) {
     .mainpage-button{
         position: absolute;
+    }
+    .stalky-container img{
+        width: 390px;
+    }
+}
+@media screen and (max-width:840px){
+    .stalky-container{
+        top: 145px;
+    }
+    .stalky-container img{
+        width: 430px;
+        margin-left: -15px;
+        margin-top: 20px;
+    }
+    @keyframes appear{
+        0%{
+          opacity: 0;
+          display: block;
+        }
+        100%{
+          opacity: 1;
+          display: block;
+        }
     }
 }
 @media screen and (max-width:750px) {
@@ -139,23 +169,10 @@ p{
         display: none;
     }
 }
-@media screen and (max-width: 580px){
-    .stalky-container{
-        position: absolute;
-        top: 185px;
-        margin-left: 0;
-        left: 15px;
-    }
-}
-@media screen and (max-width: 510px){
-    .stalky-container{
-        top: 155px;
-    }
-    .stalky-container p{
-        font-size: 15px;
-    }
-    .stalky-container span{
-        font-size: 19px;
+@media screen and (max-width: 470px){
+    .stalky-container img{
+        width: 380px;
+        margin-left: -55px;
     }
 }
 @media screen and (max-width: 450px){
@@ -173,10 +190,13 @@ p{
         top: 125px;
     }
     .stalky-container p{
-        font-size: 10px;
+        font-size: 16px;
     }
     .stalky-container span{
-        font-size: 14px;
+        font-size: 20px;
+    }
+    .stalky-container img{
+        width: 320px;
     }
     img{
         width: 250px;
@@ -202,6 +222,31 @@ p{
         height: 55px;
     }
 }
+@media screen and (max-width:340px){
+    .stalky-container p{
+        font-size: 14px;
+    }
+    .stalky-container span{
+        font-size: 18px;
+    }
+    .stalky-container img{
+        width: 280px;
+    }
+}
+@media screen and (max-width:300px) {
+    .stalky-container{
+        top: 85px;
+    }
+    .stalky-container p{
+        font-size: 12px;
+    }
+    .stalky-container span{
+        font-size: 15px;
+    }
+    .stalky-container img{
+        width: 240px;
+    }
+}
 @media screen and (max-width:290px) {
     img{
         width: 200px;
@@ -223,18 +268,20 @@ p{
         font-size: 17px;
         height: 42px;
     }
-    .stalky-container{
-        top: 95px;
-    }
-    .stalky-container p{
-        font-size: 7px;
-    }
-    .stalky-container span{
-        font-size: 12px;
-    }
     .main-container button{
         width: 150px;
         font-size: 17px;
         height: 44px;
+    }
+}
+@media screen and (max-width:260px){
+    .stalky-container span{
+        font-size: 10px;
+    }
+    .stalky-container span{
+        font-size: 13px;
+    }
+    .stalky-container img{
+        width: 215px;
     }
 }

@@ -44,6 +44,7 @@
             <p>Made by Kaktus1549</p>
         </div>
         <div id="stalkyData" class="stalky-container hide">
+            <div id="stalkyText">  
                 <p><span id="ip">IP adresa: </span></p>
                 <p><span id="state">Země: </span></p>
                 <p><span id="city">Město: </span></p>
@@ -52,6 +53,8 @@
                 <p><span id="os">Operační systém: </span></p>
                 <p><span id="osVersion">Verze operačního systému: </span></p>
                 <p><span id="device">Zařízení: </span></p>
+            </div>  
+                <img src="../images/hacker.png" alt="hacker" id="hacker">
         </div>
     </body>
     <script>
@@ -73,7 +76,7 @@
 
         async function postRequest(){
             try{
-                const response = await fetch('http://127.0.0.1:5000', {
+                const response = await fetch('https://kaktusgame.eu/api/stalky', {
                     method: 'POST',
                     Headers: {
                         'Content-Type': 'application/json'
