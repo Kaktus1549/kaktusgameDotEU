@@ -22,21 +22,21 @@
     <meta property="twitter:image" content="https://kaktusgame.eu/images/tux.png" />
 
     <!--link to css-->
-    <link rel="stylesheet" type="text/css" href="../css/stalky.css">
+    <link rel="stylesheet" type="text/css" href="./css/stalky.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>d0_u_f3el_s4fe?</title>
-    <link rel="icon" href="../images/kak.png">
+    <link rel="icon" href="./images/kak.png">
 </head>
     <body>
         <div class="mainpage-button">
             <button  onclick="window.location.href='https://kaktusgame.eu'">Hlavní stránka</button>
         </div>
         <div class="main-container">
-            <img src="../images/tux.png" alt="tux" id="tux">
+            <img src="./images/tux.png" alt="tux" id="tux">
             <p id="stalkyIntro">Co si myslíš, že vím o tobě? Jseš si jistý, že jsi na internetu zcela anonymní? Stačí jen kliknout na tlačítko a já ti ukážu, co všechno jsem o tobě zjistil!</p>
             <button id="stalkyButton" onclick="stalky();">Ukaž mi to!</button>
         </div>
@@ -54,11 +54,11 @@
                 <p><span id="osVersion">Verze operačního systému: </span></p>
                 <p><span id="device">Zařízení: </span></p>
             </div>  
-                <img src="../images/hacker.png" alt="hacker" id="hacker">
+                <img src="./images/hacker.png" alt="hacker" id="hacker">
         </div>
         <div id="apiError" class="api-error hide">
             <p> Jejda, něco se pokazilo :( Zkus to prosím znovu, prozatím tu máš obrázek kočičky :D </p>
-            <img src="../images/cutecat.jpg" alt="cat" id="cat">
+            <img src="./images/cutecat.jpg" alt="cat" id="cat">
         </div>
     </body>
     <script>
@@ -122,7 +122,7 @@
         async function stalky(){
             disappear();
             data = await postRequest();
-            if(data === null){
+            if(data === null || data['success'] === false){
                 appearError();
                 return;
             }
