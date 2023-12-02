@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to bottom right, black 64%, #203966 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+button{
+    width: 225px;
+    height: 65px;
+    border-radius: 15px;
+    border: 4px solid #203966;
+    background-color: #042331;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #203966;
+    border: 4px solid #042331;
+}
+img{
+    width: 400px; 
+    border-radius: 15px;
+    border: 4px solid #203966;
+    transition: 0.4s ease-in-out;
+}
+img:hover{
+    border: 4px solid #203966;
+    transform: translate(0, -15px);
+}
+p{
+    margin-left: 18px;
+    margin-right: 14px;
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+}
+.mainpage-button{
+    position: fixed;
+    left: 0;
+    top:0;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.main-container{
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    top: 105px;
+    margin-bottom: 20px;
+}
+.main-container p{
+    margin-top: 15px;
+}
+.main-container button{
+    margin-top: 8.5px;
+    width: 278px;
+}
+.signature{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.signature p{
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.element-dissapear{
+    animation: dissapear 0.7s ease-in-out forwards;
+
+}
+.hide{
+    display: none;
+}
+.stalky-container{
+    position: absolute;
+    align-items: center;
+    top: 205px;
+}
+.stalky-container p{
+    margin: 0 0 0 0;
+    flex-grow: 1;
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px;
+}
+.stalky-container span{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.stalky-container img{
+    float: right;
+    margin-left: 15px;
+    width: 450px;
+}
+.element-appear{
+    animation: appear 0.7s ease-in-out forwards;
+}
+.api-error{
+    top: 190px;
+    width: 640px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+}
+.api-error p{
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+.api-error img{
+    width: 600px;
+    margin-top: 28px;
+}
+@keyframes dissapear{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+    }
+}
+@keyframes appear{
+    0%{
+      opacity: 0;
+      display: flex;
+    }
+    100%{
+      opacity: 1;
+      display: flex;
+    }
+}
+@media screen and (max-width: 900px) {
+    .mainpage-button{
+        position: absolute;
+    }
+    .stalky-container img{
+        width: 390px;
+    }
+}
+@media screen and (max-width:840px){
+    .stalky-container{
+        top: 145px;
+    }
+    .stalky-container img{
+        width: 430px;
+        margin-left: -15px;
+        margin-top: 20px;
+    }
+    @keyframes appear{
+        0%{
+          opacity: 0;
+          display: block;
+        }
+        100%{
+          opacity: 1;
+          display: block;
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .signature{
+        display: none;
+    }
+}
+@media screen and (max-width:680px){
+    .api-error{
+        width: 540px;
+    }
+    .api-error img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:570px){
+    .api-error{
+        width: 440px;
+    }
+    .api-error img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 470px){
+    .stalky-container img{
+        width: 380px;
+        margin-left: -55px;
+    }
+    .api-error{
+        width: 340px;
+        top: 150px;
+    }
+    .api-error img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 450px){
+    img{
+        width: 300px;
+    }
+    p{
+        font-size: 15px;
+        margin-left: 55px;
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width:410px){
+    .stalky-container{
+        top: 125px;
+    }
+    .stalky-container p{
+        font-size: 16px;
+    }
+    .stalky-container span{
+        font-size: 20px;
+    }
+    .stalky-container img{
+        width: 320px;
+    }
+    img{
+        width: 250px;
+    }
+    p{
+        font-size: 12px;
+        margin-left: 75px;
+        margin-right: 65px;
+    }
+    .main-container button{
+        width: 190px;
+        font-size: 19px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:380px){
+    .api-error{
+        width: 240px;
+    }
+    .api-error p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .api-error img{
+        width: 200px;
+    }
+}
+@media screen and (max-width:365px){
+    .stalky-container{
+        top: 105px;
+    }
+    .mainpage-button button{
+        width: 180px;
+        font-size: 19px;
+        height: 55px;
+    }
+    .api-error{
+        top: 110px;
+    }
+}
+@media screen and (max-width:340px){
+    .stalky-container p{
+        font-size: 14px;
+    }
+    .stalky-container span{
+        font-size: 18px;
+    }
+    .stalky-container img{
+        width: 280px;
+    }
+}
+@media screen and (max-width:300px) {
+    .stalky-container{
+        top: 85px;
+    }
+    .stalky-container p{
+        font-size: 12px;
+    }
+    .stalky-container span{
+        font-size: 15px;
+    }
+    .stalky-container img{
+        width: 240px;
+    }
+}
+@media screen and (max-width:290px) {
+    img{
+        width: 200px;
+    }
+    p{
+        font-size: 10px;
+        margin-left: 105px;
+        margin-right: 95px;
+    }
+    .mainpage-button button{
+        width: 170px;
+        font-size: 18px;
+        height: 44px;
+    }
+    .api-error{
+        top: 90px;
+    }
+}
+@media screen and (max-width:275px){
+    .mainpage-button button{
+        width: 165px;
+        font-size: 17px;
+        height: 42px;
+    }
+    .main-container button{
+        width: 150px;
+        font-size: 17px;
+        height: 44px;
+    }
+}
+@media screen and (max-width:260px){
+    .stalky-container span{
+        font-size: 10px;
+    }
+    .stalky-container span{
+        font-size: 13px;
+    }
+    .stalky-container img{
+        width: 215px;
+    }
+    .api-error{
+        width: 190px;
+    }
+    .api-error img{
+        width: 150px;
+    }
+}
