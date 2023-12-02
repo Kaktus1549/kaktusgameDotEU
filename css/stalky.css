@@ -117,6 +117,24 @@ p{
 .element-appear{
     animation: appear 0.7s ease-in-out forwards;
 }
+.api-error{
+    top: 190px;
+    width: 640px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.api-error p{
+    font-family: 'Oxygen Mono', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+.api-error img{
+    width: 600px;
+    margin-top: 28px;
+}
 @keyframes dissapear{
     0%{
       opacity: 1;
@@ -169,10 +187,33 @@ p{
         display: none;
     }
 }
+@media screen and (max-width:680px){
+    .api-error{
+        width: 540px;
+    }
+    .api-error img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:570px){
+    .api-error{
+        width: 440px;
+    }
+    .api-error img{
+        width: 400px;
+    }
+}
 @media screen and (max-width: 470px){
     .stalky-container img{
         width: 380px;
         margin-left: -55px;
+    }
+    .api-error{
+        width: 340px;
+        top: 150px;
+    }
+    .api-error img{
+        width: 300px;
     }
 }
 @media screen and (max-width: 450px){
@@ -212,6 +253,18 @@ p{
         height: 45px;
     }
 }
+@media screen and (max-width:380px){
+    .api-error{
+        width: 240px;
+    }
+    .api-error p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .api-error img{
+        width: 200px;
+    }
+}
 @media screen and (max-width:365px){
     .stalky-container{
         top: 105px;
@@ -220,6 +273,9 @@ p{
         width: 180px;
         font-size: 19px;
         height: 55px;
+    }
+    .api-error{
+        top: 110px;
     }
 }
 @media screen and (max-width:340px){
@@ -261,6 +317,9 @@ p{
         font-size: 18px;
         height: 44px;
     }
+    .api-error{
+        top: 90px;
+    }
 }
 @media screen and (max-width:275px){
     .mainpage-button button{
@@ -283,5 +342,11 @@ p{
     }
     .stalky-container img{
         width: 215px;
+    }
+    .api-error{
+        width: 190px;
+    }
+    .api-error img{
+        width: 150px;
     }
 }
