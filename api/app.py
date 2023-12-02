@@ -26,8 +26,10 @@ def index():
             if ip_data is not None:
                 if 'city' not in ip_data:
                     ip_data['city'] = None
-                if 'state' not in ip_data:
-                    ip_data['state'] = None
+                if 'country' not in ip_data:
+                    if ip_data['city'] == "Prague":
+                        ip_data['country'] = "CZ"
+                    ip_data['country'] = None
                 if 'timezone' not in ip_data:
                     ip_data['timezone'] = None
                 return{
@@ -38,7 +40,6 @@ def index():
                     "browser": user_agent.browser.family,
                     "ip": client_ip,
                     "state": ip_data['country'],
-                    "state": ip_data['state'],
                     "city": ip_data['city'],
                     "timezone": ip_data['timezone']
                 }
