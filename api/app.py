@@ -39,7 +39,7 @@ def index():
                     "osVersion": user_agent.os.version_string,
                     "browser": user_agent.browser.family,
                     "ip": client_ip,
-                    "state": ip_data['country'],
+                    "state": ip_data['state'],
                     "city": ip_data['city'],
                     "timezone": ip_data['timezone']
                 }
