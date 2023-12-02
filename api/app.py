@@ -3,11 +3,9 @@ from flask_cors import CORS
 from user_agents import parse
 import requests
 import os
-
 app = Flask(__name__)
 CORS(app)
 token = os.environ.get('TOKEN', "None")
-
 def get_ip_data(ip):
     if token == "None":
         return None
@@ -39,6 +37,7 @@ def index():
                     "osVersion": user_agent.os.version_string,
                     "browser": user_agent.browser.family,
                     "ip": client_ip,
+                    "state": ip_data['country'],
                     "state": ip_data['state'],
                     "city": ip_data['city'],
                     "timezone": ip_data['timezone']
@@ -55,7 +54,6 @@ def index():
                     "city": None,
                     "timezone": None
                 }
-
         except Exception as e:
             return {
                 'success': False,
