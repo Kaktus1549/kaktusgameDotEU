@@ -24,7 +24,7 @@ def index():
         try:
             user_agent = parse(request.headers.get('User-Agent'))
             client_ip = request.headers.get('X-Real-IP') or request.headers.get('X-Forwarded-For') or request.remote_addr
-            ip_data = get_ip_data("89.103.132.145")
+            ip_data = get_ip_data(client_ip)
             if ip_data is not None:
                 if 'city' not in ip_data:
                     ip_data['city'] = None
