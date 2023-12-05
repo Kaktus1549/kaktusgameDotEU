@@ -76,8 +76,11 @@
             monitorWidth= window.screen.availWidth;
             monitorHeight= window.screen.availHeight;
 
-
             return `${monitorWidth}x${monitorHeight}`;
+        }
+        function disableButton(){
+            const button = document.getElementById("stalkyButton");
+            button.disabled = true;
         }
         function appear(){
             const stalkyData = document.getElementById("stalkyData");
@@ -139,14 +142,21 @@
 
         }
         async function stalky(){
+            disableButton();
             disappear();
-            data = await postRequest();
-            if(data === null || data['success'] === false){
-                appearError();
-                return;
+            try{
+                data = await postRequest();
+                if(data === null || data['success'] === false){
+                    appearError();
+                    return;
+                }
+                fillData(data);
+                appear();
             }
-            fillData(data);
-            appear();
+            catch(error){
+                console.error('Error occured:', error);
+                appearError();
+            }
         }
     </script>
 </html>
