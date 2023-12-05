@@ -96,6 +96,7 @@ p{
 }
 .stalky-container{
     position: absolute;
+    max-width: 98vw;
     display: flex;
     align-items: center;
     top: 205px;
