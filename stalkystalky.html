@@ -52,7 +52,8 @@
                 <p><span id="browser">Prohlížeč: </span></p>
                 <p><span id="os">Operační systém: </span></p>
                 <p><span id="osVersion">Verze operačního systému: </span></p>
-                <p><span id="device">Zařízení: </span></p>
+                <p><span id="resolution">Rozlišení: </span></p>
+                <p><span id="language">Jazyk: </span></p>
             </div>  
                 <img src="./images/hacker.png" alt="hacker" id="hacker">
         </div>
@@ -70,6 +71,13 @@
             tux.classList.add("element-dissapear");
             text.classList.add("element-dissapear");
             button.classList.add("element-dissapear");
+        }
+        function getDisplayResolution(){
+            monitorWidth= window.screen.availWidth;
+            monitorHeight= window.screen.availHeight;
+
+
+            return `${monitorWidth}x${monitorHeight}`;
         }
         function appear(){
             const stalkyData = document.getElementById("stalkyData");
@@ -118,6 +126,12 @@
                         pElement.parentNode.innerHTML += ` ${value}`;
                     } 
                 }}
+            var resolution = document.getElementById("resolution");
+            var language = document.getElementById("language");
+            
+            resolution.parentNode.innerHTML += ` ${getDisplayResolution()}`;
+            language.parentNode.innerHTML += ` ${navigator.language}`;
+
         }
         async function stalky(){
             disappear();
