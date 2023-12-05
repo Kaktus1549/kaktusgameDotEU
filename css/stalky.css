@@ -174,7 +174,8 @@ p{
         margin-top: 30px;
     }
     .stalky-container{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width:750px) {
@@ -201,7 +202,6 @@ p{
 @media screen and (max-width: 470px){
     .stalky-container img{
         width: 380px;
-        margin-left: -55px;
     }
     .api-error{
         width: 340px;
