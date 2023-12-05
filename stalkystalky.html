@@ -116,8 +116,8 @@
                 if (data.hasOwnProperty(key)) {
                     var value = data[key];
                     var pElement = document.getElementById(key);
-                    if(key === null || key === undefined || key === ""){
-                        console.log("Key is null, undefined or empty");
+                    if(value === null || value === undefined || value === ""){
+                        console.log("value is null, undefined or empty");
                         pElement.parentNode.removeChild(pElement);
                         continue;
                     }
