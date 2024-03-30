@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "caption": "Python",
+      "description": "Programing in Python since 2020"
+    },
+    {
+      "caption": "CCNA",
+      "description": "Switching, Routing and Network Security"
+    },
+    {
+      "caption": "Linux",
+      "description": "Debian, CentOS, Kali Linux"
+    },
+    {
+      "caption": "Cyber security",
+      "description": "Offensive and defensive techniques"
+    },
+    {
+      "caption": "Virtualization",
+      "description": "Experience with VMware and Docker"
+    },
+    {
+      "caption": "Web development",
+      "description": "Simple web pages in Next.js"
+    },
+    {
+      "caption": "C#",
+      "description": "Little bit of brain damage"
+    }
+  ]
+}
