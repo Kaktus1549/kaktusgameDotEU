@@ -1,6 +1,4 @@
-FROM ubuntu
-
-RUN apt-get update && apt-get upgrade -y && apt-get install -y python3 python3-pip
+FROM python:3.11.7
 
 ENV TOKEN "None"
 

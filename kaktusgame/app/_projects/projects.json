@@ -1,0 +1,30 @@
+{
+    "Apalucha":{
+        "caption": "Apalucha",
+        "text": "Apalucha is simple web application build with React and Next. It was made for film festival. Concept is simple, users gets voting papers with login QR code. They will login it and vote for their favourite movie. After voting they can see results.",
+        "image": "/images/tux.png",
+        "image_width": 606,
+        "image_height": 546
+    },
+    "EternalGaming":{
+        "caption": "EternalGaming",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "/images/cat.png",
+        "image_width": 1080,
+        "image_height": 1080
+    },
+    "MeteorGame":{
+        "caption": "MetoerGame",
+        "text": "My simple meteor game!",
+        "image": "/images/hacker.png",
+        "image_width": 960,
+        "image_height": 696
+    },
+    "KaktusGame":{
+        "caption": "KaktusGame",
+        "text": "KaktusGame is my personal website",
+        "image": "/images/tux.png",
+        "image_width": 606,
+        "image_height": 546
+    }
+}
