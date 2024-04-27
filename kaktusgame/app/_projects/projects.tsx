@@ -11,13 +11,15 @@ export default function Projects(){
     const [switching, setSwitching] = useState<boolean>(false);
 
     function handleSelect(id: string) {
-        setDisabledButton(id)
-        let index = projectKeys.indexOf(id);
-        let currentIndex = projectKeys.indexOf(disabledButton);
-        if(index > currentIndex){
-            moveProjects(disabledButton as keyof typeof projectsData, id as keyof typeof projectsData, 'right');
-        } else {
-            moveProjects(disabledButton as keyof typeof projectsData, id as keyof typeof projectsData, 'left');
+        if(switching === false){
+            setDisabledButton(id)
+            let index = projectKeys.indexOf(id);
+            let currentIndex = projectKeys.indexOf(disabledButton);
+            if(index > currentIndex){
+                moveProjects(disabledButton as keyof typeof projectsData, id as keyof typeof projectsData, 'right');
+            } else {
+                moveProjects(disabledButton as keyof typeof projectsData, id as keyof typeof projectsData, 'left');
+            }
         }
     }
 
