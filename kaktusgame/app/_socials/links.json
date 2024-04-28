@@ -1,7 +1,7 @@
 {
     "instagram":{
         "text": "Instagram",
-        "url": "https://www.instagram.com/yourusername",
+        "url": "https://www.instagram.com/kaktus1549_/",
         "icon": {
             "path": "/images/ig.png",
             "alt": "Instagram Logo",
@@ -11,7 +11,7 @@
     },
     "github":{
         "text": "GitHub",
-        "url": "https://www.github.com/yourusername",
+        "url": "https://github.com/Kaktus1549",
         "icon": {
             "path": "/images/gh.png",
             "alt": "GitHub Logo",
@@ -21,9 +21,9 @@
     },
     "linkedin":{
         "text": "LinkedIn",
-        "url": "https://www.linkedin.com/in/yourusername",
+        "url": "https://www.linkedin.com/in/ond%C5%99ej-hummel-a2a4622a2/",
         "icon": {
-            "path": "/images/ptero.png",
+            "path": "/images/ln.png",
             "alt": "LinkedIn Logo",
             "width": 486,
             "height": 453

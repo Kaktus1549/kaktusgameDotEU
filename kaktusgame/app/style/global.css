@@ -27,6 +27,8 @@ header{
 }
 header .header-banner{
     height: auto;
+    min-height: 150px;
+    object-fit: cover;
     width: 100%;
     z-index: 1;
     filter: blur(2.5px);
@@ -34,6 +36,7 @@ header .header-banner{
 header .logo{
     z-index: 2;
     width: 12%;
+    min-width: 90px;
     height: auto;
     position: absolute;
     left: 50%;
