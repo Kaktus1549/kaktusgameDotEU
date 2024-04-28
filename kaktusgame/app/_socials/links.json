@@ -1,0 +1,32 @@
+{
+    "instagram":{
+        "text": "Instagram",
+        "url": "https://www.instagram.com/yourusername",
+        "icon": {
+            "path": "/images/ig.png",
+            "alt": "Instagram Logo",
+            "width": 489,
+            "height": 453
+        }
+    },
+    "github":{
+        "text": "GitHub",
+        "url": "https://www.github.com/yourusername",
+        "icon": {
+            "path": "/images/gh.png",
+            "alt": "GitHub Logo",
+            "width": 489,
+            "height": 453
+        } 
+    },
+    "linkedin":{
+        "text": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yourusername",
+        "icon": {
+            "path": "/images/ptero.png",
+            "alt": "LinkedIn Logo",
+            "width": 486,
+            "height": 453
+        }
+    }
+}

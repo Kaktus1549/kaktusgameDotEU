@@ -6,6 +6,7 @@ import './style/global.css';
 import Whoami from "./_whoami/whoami";
 import Skills from "./_skills/skills";
 import Projects from "./_projects/projects";
+import Socials from "./_socials/socials";
 
 export default function Home() {
   try{
@@ -38,6 +39,7 @@ export default function Home() {
         </video>
       </div>
       <Projects/>
+      <Socials/>
       <footer>
         <p>© 2023 Kaktus Game</p>
       </footer>
