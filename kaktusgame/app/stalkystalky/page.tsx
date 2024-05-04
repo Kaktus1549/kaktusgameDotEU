@@ -4,19 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import '../style/stalky.css';
 import RenderData from "./stalky";
-import RootLayout from "../layout";
 
 const apiUrl = process.env.API_URL as string;
 const pageUrl = process.env.URL as string;
-const pageTitle = 'd0_u_f3el_s4fe?';
-const pageDescription = "Do you feel safe on the internet? I don't think so. I'm going to show you how easy it is to get information about you.";
 const pageImage = pageUrl + '/images/tux.png';
-const metadataOverride = {
-    title: pageTitle,
-    description: pageDescription,
-    image: pageImage,
-    url: pageUrl
-};
+
+
 
 export default function Stalky() {
     const [reveal, setReveal] = useState(false);
@@ -54,14 +47,14 @@ export default function Stalky() {
     }
 
     return (
-        <RootLayout metadataOverride={metadataOverride} titleOverride="d0_u_f3el_s4fe?">
+        <>
             <div className="mainpage-button">
                 <button  onClick={() => window.location.href = pageUrl}>Main page</button>
             </div>
                 {reveal === false ?
                     <div className="main-container">
                         <Image src="/images/tux.png" alt="tux" id="tux" width={606} height={546} />
-                        <p id="stalkyIntro">What do you think I know about you? Are you sure you're completely anonymous on the internet? Just click a button and I'll show you everything I've found out about you!</p>
+                        <p id="stalkyIntro">What do you think I know about you? Are you sure you&apos;re completely anonymous on the internet? Just click a button and I&apos;ll show you everything I&apos;ve found out about you!</p>
                         <button id="stalkyButton" onClick={stalky}>Show me!</button>
                     </div>
                 : <RenderData data={apiData} />
@@ -69,6 +62,6 @@ export default function Stalky() {
             <div className="signature">
                 <p>Made by Kaktus1549</p>
             </div>
-        </RootLayout>
+        </>
     );
 }

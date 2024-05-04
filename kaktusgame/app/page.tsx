@@ -7,18 +7,8 @@ import Whoami from "./_whoami/whoami";
 import Skills from "./_skills/skills";
 import Projects from "./_projects/projects";
 import Socials from "./_socials/socials";
-import RootLayout from "./layout";
 
-const pageUrl = process.env.URL as string;
-const pageTitle = 'KaktusGame';
-const pageDescription = "Hey, I'm Kaktus and I created this website. I don't know if you'll like it, but I'd be glad for any feedback!";
-const pageImage = pageUrl + '/images/whoIam.png';
-const metadataOverride = {
-    title: pageTitle,
-    description: pageDescription,
-    image: pageImage,
-    url: pageUrl
-};
+
 
 export default function Home() {
   try{
@@ -36,7 +26,7 @@ export default function Home() {
     }
   }
   return (  
-    <RootLayout metadataOverride={metadataOverride} titleOverride={pageTitle}>  
+    <>  
       <div className="main-container">
         <header>
           <Image src="/images/banner.png" alt="Kaktus Game" width="1020" height="249" className="header-banner"/>
@@ -57,6 +47,6 @@ export default function Home() {
           <p>© 2023 Kaktus Game</p>
         </footer>
       </div>
-    </RootLayout>
+    </>
   );
 }
