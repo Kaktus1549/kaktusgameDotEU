@@ -3,7 +3,7 @@ import React from 'react';
 const pageUrl = process.env.URL as string;
 const pageTitle = 'KaktusGame';
 const pageDescription = "Hey, I'm Kaktus and I created this website. I don't know if you'll like it, but I'd be glad for any feedback!";
-const pageImage = '/images/whoIam.png';
+const pageImage = '/images/whoIam_vider.png';
 export const metadata = {
   title: pageTitle,
   description: pageDescription,
