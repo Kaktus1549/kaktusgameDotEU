@@ -9,6 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 token = os.environ.get('TOKEN', 'None')
+url = os.environ.get('URL', 'https://kaktusgame.eu/')
 print(token)
 def get_ip_data(ip):
     if token == "None":
@@ -53,7 +54,7 @@ def index():
                 'message': f'Something went wrong -> {e}'
             }
     else:
-        redirect_url = "https://kaktusgame.eu/error.html?code=403"
+        redirect_url = url + "error/403"
         return redirect(redirect_url, code=302)
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
