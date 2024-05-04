@@ -56,13 +56,13 @@ export default function Stalky() {
     return (
         <RootLayout metadataOverride={metadataOverride} titleOverride="d0_u_f3el_s4fe?">
             <div className="mainpage-button">
-                <button  onClick={() => window.location.href = pageUrl}>Hlavní stránka</button>
+                <button  onClick={() => window.location.href = pageUrl}>Main page</button>
             </div>
                 {reveal === false ?
                     <div className="main-container">
                         <Image src="/images/tux.png" alt="tux" id="tux" width={606} height={546} />
-                        <p id="stalkyIntro">Co si myslíš, že vím o tobě? Jseš si jistý, že jsi na internetu zcela anonymní? Stačí jen kliknout na tlačítko a já ti ukážu, co všechno jsem o tobě zjistil!</p>
-                        <button id="stalkyButton" onClick={stalky}>Ukaž mi to!</button>
+                        <p id="stalkyIntro">What do you think I know about you? Are you sure you're completely anonymous on the internet? Just click a button and I'll show you everything I've found out about you!</p>
+                        <button id="stalkyButton" onClick={stalky}>Show me!</button>
                     </div>
                 : <RenderData data={apiData} />
                 }
