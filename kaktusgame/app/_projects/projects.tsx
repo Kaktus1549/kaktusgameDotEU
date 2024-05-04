@@ -25,10 +25,20 @@ export default function Projects(){
 
     function renderProjects(){   
         let projects = [] as JSX.Element[];
+        projects.push(
+            <div className='invisible projects-box'id='dummy' key='dummy'>
+                <div className='project-box'>
+                    <div className='project-text'>
+                        <h3>Dummy box</h3>
+                        <p>If you see this, please contact me, because something went wrong.</p>
+                    </div>
+                </div>
+            </div>
+        );
         projectKeys.forEach((key, index) => {
             let project = projectsData[key as keyof typeof projectsData];
             projects.push(
-                <div className={index != 0 ? 'absolute dummy projects-box': 'projects-box'} id={key} key={key}>
+                <div className={index != 0 ? 'absolute invisible projects-box': 'absolute projects-box'} id={key} key={key}>
                     <div className='project-box'>
                         <Image src={project.image} alt={project.caption} width={project.image_width} height={project.image_height} className='project-image'/>
                         <div className='project-text'>
@@ -51,35 +61,26 @@ export default function Projects(){
     }
     function moveProjects(currentProject: keyof typeof projectsData, nextProject: keyof typeof projectsData, direction: string){
         // finds projects-box with id of key
-        if (switching){
-            return;
-        }
+        if (switching) return;
         setSwitching(true);
-        let current = document.getElementById(currentProject);
-        let next = document.getElementById(nextProject);
-        if(current && next){
-            if(direction === 'left'){
-                current?.classList.add('outLeft');
-                next?.classList.replace('dummy', 'inLeft');
-                setTimeout(() => {
-                    next?.classList.remove('absolute', 'inLeft');
-                    current?.classList.replace('outLeft', 'dummy');
-                    current?.classList.add('absolute');
-                }, 600);
-            }
-            if(direction === 'right'){
-                current?.classList.add('outRight');
-                next?.classList.replace('dummy', 'inRight');
-                setTimeout(() => {
-                    next?.classList.remove('absolute', 'inRight');
-                    current?.classList.replace('outRight', 'dummy');
-                    current?.classList.add('absolute');
-                }, 600);
-            }
-        }
-        setTimeout(() => {
+
+        const current = document.getElementById(currentProject);
+        const next = document.getElementById(nextProject);
+
+        const handleAnimationEnd = () => {
+            next?.classList.remove(`in${direction.charAt(0).toUpperCase() + direction.slice(1)}`);
+            current?.classList.replace(`out${direction.charAt(0).toUpperCase() + direction.slice(1)}`, 'invisible');
+            current?.removeEventListener('animationend', handleAnimationEnd);
             setSwitching(false);
-        }, 600);
+        };
+
+        if (current && next) {
+            requestAnimationFrame(() => {
+                current.classList.add(`out${direction.charAt(0).toUpperCase() + direction.slice(1)}`);
+                next.classList.replace('invisible', `in${direction.charAt(0).toUpperCase() + direction.slice(1)}`);
+            });
+            current.addEventListener('animationend', handleAnimationEnd);
+        }
     }
 
     function nextProject(){

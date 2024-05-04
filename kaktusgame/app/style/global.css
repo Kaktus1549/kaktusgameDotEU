@@ -152,6 +152,7 @@ p{
     margin-top: 20px;
     gap: 30px;
     margin-bottom: 60px;
+    position: relative;
 }
 .project{
     display: flex;
@@ -314,24 +315,31 @@ footer p{
 .outRight{
     animation: moveAndFadeOutLeft 0.6s ease-in-out;
     animation-fill-mode: forwards;
+    will-change: transform, opacity, visibility;
+    backface-visibility: hidden;
 }
 .inRight{
     animation: moveAndFadeInLeft 0.6s ease-in-out;
     animation-fill-mode: forwards;
-}
+    will-change: transform, opacity, visibility;
+    backface-visibility: hidden;}
 .outLeft{
     animation: moveAndFadeOutRight 0.6s ease-in-out;
     animation-fill-mode: forwards;
+    will-change: transform, opacity, visibility;
+    backface-visibility: hidden;
 }
 .inLeft{
     animation: moveAndFadeInRight 0.6s ease-in-out;
     animation-fill-mode: forwards;
+    will-change: transform, opacity, visibility;
+    backface-visibility: hidden;
 }
 .absolute{
     position: absolute;
 }
-.dummy{
-    display: none;
+.invisible{
+    visibility: hidden;
 }
 @media screen and (max-width: 1075px) {
     header{
