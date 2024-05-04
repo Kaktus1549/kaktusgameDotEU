@@ -36,28 +36,16 @@ def index():
                     ip_data['country'] = None
                 if 'timezone' not in ip_data:
                     ip_data['timezone'] = None
-                return{
+            return{
                     "success": True,
-                    "device": user_agent.device.family,
-                    "os": user_agent.os.family,
-                    "osVersion": user_agent.os.version_string,
-                    "browser": user_agent.browser.family,
-                    "ip": client_ip,
-                    "state": ip_data['country'],
-                    "city": ip_data['city'],
-                    "timezone": ip_data['timezone']
-                }
-            else:
-                return {
-                    "success": True,
-                    "device": user_agent.device.family,
-                    "os": user_agent.os.family,
-                    "osVersion": user_agent.os.version_string,
-                    "browser": user_agent.browser.family,
-                    "ip": client_ip,
-                    "state": None,
-                    "city": None,
-                    "timezone": None
+                    "device": user_agent.device.family or None,
+                    "os": user_agent.os.family or None,
+                    "osVersion": user_agent.os.version_string or None,
+                    "browser": user_agent.browser.family or None,
+                    "ip": client_ip or None,
+                    "state": ip_data['country'] or None,
+                    "city": ip_data['city'] or None,
+                    "timezone": ip_data['timezone'] or None
                 }
         except Exception as e:
             return {
