@@ -3,10 +3,10 @@ services:
     restart: always
     build: ../kaktusgame/.
     ports:
-      - "1549:3000"
+      - "${FRONTEND_PORT}:3000"
     
   kaktusgame-backend:
     restart: always
     build: ../api/.
     ports:
-      - "1548:5000"
+      - "${BACKEND_PORT}:5000"
