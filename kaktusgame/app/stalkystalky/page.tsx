@@ -4,7 +4,19 @@ import Image from "next/image";
 import { useState } from "react";
 import '../style/stalky.css';
 import RenderData from "./stalky";
+import RootLayout from "../layout";
 
+const apiUrl = process.env.API_URL as string;
+const pageUrl = process.env.URL as string;
+const pageTitle = 'd0_u_f3el_s4fe?';
+const pageDescription = "Do you feel safe on the internet? I don't think so. I'm going to show you how easy it is to get information about you.";
+const pageImage = pageUrl + '/images/tux.png';
+const metadataOverride = {
+    title: pageTitle,
+    description: pageDescription,
+    image: pageImage,
+    url: pageUrl
+};
 
 export default function Stalky() {
     const [reveal, setReveal] = useState(false);
@@ -12,8 +24,6 @@ export default function Stalky() {
         "success": false,
         "message": "If you are seeing this, something went wrong! Please contact the developer."
     } as StalkyAPI);
-    let apiUrl = process.env.API_URL as string;
-    let url = process.env.URL as string;
 
     async function postRequest(){
         try{
@@ -44,9 +54,9 @@ export default function Stalky() {
     }
 
     return (
-        <> 
+        <RootLayout metadataOverride={metadataOverride} titleOverride="d0_u_f3el_s4fe?">
             <div className="mainpage-button">
-                <button  onClick={() => window.location.href = url}>Hlavní stránka</button>
+                <button  onClick={() => window.location.href = pageUrl}>Hlavní stránka</button>
             </div>
                 {reveal === false ?
                     <div className="main-container">
@@ -59,6 +69,6 @@ export default function Stalky() {
             <div className="signature">
                 <p>Made by Kaktus1549</p>
             </div>
-        </>
+        </RootLayout>
     );
 }
