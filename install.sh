@@ -15,6 +15,7 @@ echo ""
 
 read -sp "Enter token for IPInfo API (default: empty): " TOKEN
 TOKEN=${TOKEN:-""}
+echo " "
 read -p "Enter port for backend (default: 5000): " BACKEND_PORT
 BACKEND_PORT=${BACKEND_PORT:-5000}
 read -p "Enter URL for backend (default: https://kaktusgame.eu/api): " BACKEND_URL
