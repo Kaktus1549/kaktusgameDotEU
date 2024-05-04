@@ -34,13 +34,13 @@ FRONTEND_PORT=${FRONTEND_PORT:-3000}
 read -p "Enter URL for frontend (default: https://kaktusgame.eu): " FRONTEND_URL
 FRONTEND_URL=${FRONTEND_URL:-"https://kaktusgame.eu"}
 
-cat << EOF > ./api/.env
+cat << EOF > ./Backend/.env
 TOKEN=$TOKEN
 URL=$FRONTEND_URL
 
 EOF
 
-cat << EOF > ./kaktusgame/.env
+cat << EOF > ./Frontend/.env
 API_URL=$BACKEND_URL
 URL=$FRONTEND_URL
 

@@ -1,12 +1,12 @@
 services:
   kaktusgame-frontend:
     restart: always
-    build: ../kaktusgame/.
+    build: ../Frontend/.
     ports:
       - "${FRONTEND_PORT}:3000"
     
   kaktusgame-backend:
     restart: always
-    build: ../api/.
+    build: ../Backend/.
     ports:
       - "${BACKEND_PORT}:5000"
