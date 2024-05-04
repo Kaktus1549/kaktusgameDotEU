@@ -3,9 +3,13 @@ from flask_cors import CORS
 from user_agents import parse
 import requests
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app)
-token = os.environ.get('TOKEN', "None")
+token = os.environ.get('TOKEN', 'None')
+print(token)
 def get_ip_data(ip):
     if token == "None":
         return None
