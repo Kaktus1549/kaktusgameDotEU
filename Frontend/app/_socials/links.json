@@ -3,7 +3,7 @@
         "text": "Instagram",
         "url": "https://www.instagram.com/kaktus1549_/",
         "icon": {
-            "path": "/images/ig.png",
+            "path": "/logos/ig.png",
             "alt": "Instagram Logo",
             "width": 489,
             "height": 453
@@ -13,7 +13,7 @@
         "text": "GitHub",
         "url": "https://github.com/Kaktus1549",
         "icon": {
-            "path": "/images/gh.png",
+            "path": "/logos/gh.png",
             "alt": "GitHub Logo",
             "width": 489,
             "height": 453
@@ -23,7 +23,7 @@
         "text": "LinkedIn",
         "url": "https://www.linkedin.com/in/ond%C5%99ej-hummel-a2a4622a2/",
         "icon": {
-            "path": "/images/ln.png",
+            "path": "/logos/ln.png",
             "alt": "LinkedIn Logo",
             "width": 486,
             "height": 453

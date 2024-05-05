@@ -30,7 +30,7 @@ export default function Home() {
       <div className="main-container">
         <header>
           <Image src="/images/banner.png" alt="Kaktus Game" width="1020" height="249" className="header-banner"/>
-          <Image src="/images/kaktus.png" alt="Kaktus Game" width="482" height="482" className="logo"/>
+          <Image src="/logos/kaktus.png" alt="Kaktus Game" width="482" height="482" className="logo"/>
         </header>
         <Whoami/>
         <Skills/>

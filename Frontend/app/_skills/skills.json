@@ -10,7 +10,7 @@
     },
     {
       "caption": "Linux",
-      "description": "Debian, CentOS, Kali Linux"
+      "description": "Debian, CentOS, Kali"
     },
     {
       "caption": "Cyber security",
@@ -22,11 +22,11 @@
     },
     {
       "caption": "Web development",
-      "description": "Simple web pages in Next.js"
+      "description": "NextJS, CSS, HTML"
     },
     {
-      "caption": "C#",
-      "description": "Little bit of brain damage"
+      "caption": "SQL Essentials",
+      "description": "Experience with MySQL and SQLite"
     }
   ]
 }
