@@ -8,7 +8,7 @@
     },
     "EternalGaming":{
         "caption": "Eternal Gaming",
-        "text": "I've developed several Discord bots using the discord.py library, currently available for preview on the Eternal Gaming Discord server. While these projects are in private repositories, you can still see them in action there. Previously, I also managed system administration for SCP: SL servers on Eternal Gaming, although these servers are no longer active.",
+        "text": "I've developed several Discord bots for automation using the discord.py library, currently available for preview on the Eternal Gaming Discord server. While these projects are in private repositories, you can still see them in action there. Previously, I also managed system administration for SCP: SL servers on Eternal Gaming, although these servers are no longer active.",
         "image": "/logos/eg.png",
         "image_width": 1080,
         "image_height": 1080
