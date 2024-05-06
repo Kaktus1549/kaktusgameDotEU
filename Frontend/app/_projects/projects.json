@@ -2,7 +2,7 @@
     "Apalucha":{
         "caption": "Apalucha",
         "text": "Apalucha is a web voting system specifically designed for film festivals. The concept is straightforward: users receive voting ticket equipped with a login QR code. They scan this code to access the platform and cast their vote for their favorite movie. After voting, participants can immediately view the results. This system not only enhances the voting process but also adds an interactive element to the festival experience. It is built using React and Next.js, leveraging these technologies to ensure a smooth and responsive user interface.",
-        "image": "/images/cat.png",
+        "image": "/images/voting.png",
         "image_width": 606,
         "image_height": 546
     },
