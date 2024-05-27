@@ -1,0 +1,30 @@
+{
+    "Apalucha":{
+        "caption": "Apalucha",
+        "text": "Apalucha is a web voting system specifically designed for film festivals. The concept is straightforward: users receive voting ticket equipped with a login QR code. They scan this code to access the platform and cast their vote for their favorite movie. After voting, participants can immediately view the results. This system not only enhances the voting process but also adds an interactive element to the festival experience. It is built using React and Next.js, leveraging these technologies to ensure a smooth and responsive user interface.",
+        "image": "/images/voting.png",
+        "image_width": 606,
+        "image_height": 546
+    },
+    "EternalGaming":{
+        "caption": "Eternal Gaming",
+        "text": "I've developed several Discord bots for automation using the discord.py library, currently available for preview on the Eternal Gaming Discord server. While these projects are in private repositories, you can still see them in action there. Previously, I also managed system administration for SCP: SL servers on Eternal Gaming, although these servers are no longer active.",
+        "image": "/logos/eg.png",
+        "image_width": 1080,
+        "image_height": 1080
+    },
+    "MeteorGame":{
+        "caption": "Meteor Game",
+        "text": "As an introduction to programming with Python, I created a simple 2D game using a library called \"replit-play\". In this game, players navigate a spaceship, using the WASD keys to dodge meteors that fall from the sky. While the code might not be perfectly optimized, as this was my first significant project in Python, it represents a substantial learning experience and a fun challenge in game development.",
+        "image": "/images/Meteor.png",
+        "image_width": 960,
+        "image_height": 696
+    },
+    "KaktusGame":{
+        "caption": "Stalky",
+        "text": "StalkyStalky, a feature on the KaktusGame website, is an educational tool that challenges users to consider their online anonymity. By clicking a button, it reveals information like IP address and OS version, demonstrating what can be collected while browsing the internet. This tool aims to educate users about the importance of protecting their personal information online.",
+        "image": "/images/tux.png",
+        "image_width": 606,
+        "image_height": 546
+    }
+}
