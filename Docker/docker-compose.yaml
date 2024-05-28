@@ -10,3 +10,6 @@ services:
     build: ../Backend/.
     ports:
       - "${BACKEND_PORT}:5000"
+    environment:
+      - TOKEN=${TOKEN}
+      - URL=${URL}
