@@ -54,7 +54,7 @@ def index():
                 'message': f'Something went wrong -> {e}'
             }
     else:
-        redirect_url = url + "/error/403"
+        redirect_url = url + "/error/405"
         return redirect(redirect_url, code=302)
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
