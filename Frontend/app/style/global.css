@@ -10,6 +10,9 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-container{
     display: flex;
@@ -343,6 +346,21 @@ footer p{
 .invisible{
     visibility: hidden;
 }
+.spinner {
+    width: 70px;
+    height: 70px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+    margin-top: 10%;
+}
+.loading{
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+}
+
 @media screen and (max-width: 1075px) {
     header{
         margin-bottom: 40px;
@@ -781,6 +799,24 @@ footer p{
     100% {
         transform: translateX(0);
         display: block;
+        opacity: 1;
+    }
+}
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes appear {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
         opacity: 1;
     }
 }

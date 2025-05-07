@@ -33,11 +33,15 @@ read -p "Enter port for frontend (default: 3000): " FRONTEND_PORT
 FRONTEND_PORT=${FRONTEND_PORT:-3000}
 read -p "Enter URL for frontend (default: https://kaktusgame.eu): " FRONTEND_URL
 FRONTEND_URL=${FRONTEND_URL:-"https://kaktusgame.eu"}
+read -p "Enter kill switch password (default: killEv3r1thing): " KILL_SWITCH_PASSWORD
+KILL_SWITCH_PASSWORD=${KILL_SWITCH_PASSWORD:-"killEv3r1thing"}
 
 
 cat << EOF > ./Frontend/.env
 API_URL=$BACKEND_URL
 URL=$FRONTEND_URL
+KILL_SWITCH_PASSWORD=$KILL_SWITCH_PASSWORD
+KILL_SWITCH=false
 
 EOF
 
