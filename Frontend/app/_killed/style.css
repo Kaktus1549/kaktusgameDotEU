@@ -1,0 +1,47 @@
+:root {
+    --border-color: #E2351E;
+    --border-thickness: 3px;
+    --border-radius: 20px;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.down-headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.down-subheadline {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.video-container {
+    position: relative;
+    width: 72%;
+    padding-top: 37%;
+    
+    /* new: give the container a border and rounded corners */
+    border: var(--border-thickness) solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden; /* clip the video inside the rounded container */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* ensure the video covers the container without distortion */
+    object-fit: cover;
+  }
