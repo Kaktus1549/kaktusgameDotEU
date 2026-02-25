@@ -4,10 +4,14 @@ export function generateStaticParams() {
   return [400, 401, 403, 404, 500].map((id) => ({ id: String(id) }));
 }
 
-export default function ErrorPage({ params }: { params: { id: string } }) {
-  const errorCode = Number(params.id);
+export default async function ErrorPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
 
-  // Fallback if someone hits a weird/non-numeric URL
+  const errorCode = Number(id);
   const safeCode = Number.isFinite(errorCode) ? errorCode : 500;
 
   return <CustomError statusCode={safeCode} />;
